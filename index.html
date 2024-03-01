@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cartographers Assistant</title>
+    <link rel="stylesheet" type="text/css" href="dist/css/output.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="dep/fractal-api-v1.0.1/css/fractal-css.css"
+    />
+    <script src="dist/dep/fractal-api-v1.0.1/ts/basic.js"></script>
+    <script src="dist/dep/fractal-api-v1.0.1/ts/cookies.js"></script>
+    <script src="dist/dep/fractal-api-v1.0.1/ts/random.js"></script>
+    <script src="dist/dep/fractal-api-v1.0.1/ts/seed.js"></script>
+    <script src="dist/dep/fractal-api-v1.0.1/ts/math.js"></script>
+    <script src="dist/src/ts/setup.js"></script>
+    <script src="dist/src/ts/draw.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div class="section-container">
+      <select id="game-setting-game">
+        <option value="West Kingdom, Architects of the" selected>
+          Architects of the West Kingdom
+        </option>
+        <option value="West Kingdom, Paladins of the">
+          Paladins of the West Kingdom
+        </option>
+        <option value="West Kingdom, Viscounts of the">
+          Viscounts of the West Kingdom
+        </option>
+        <option value="South Tigris, Wayfarers of the">
+          Wayfarers of the South Tigris
+        </option>
+        <option value="South Tigris, Scholars of the">
+          Scholars of the South Tigris
+        </option>
+        <option value="South Tigris, Inventors of the">
+          Inventors of the South Tigris
+        </option>
+      </select>
+    </div>
+    <div class="section-container">
+      <button class="btn-medium btn-main" onclick="setup()">Setup</button>
+      <button class="btn-medium btn-main" onclick="draw()">Draw</button>
+    </div>
+    <div class="section-container">
+      <p id="action-text"></p>
+    </div>
+  </body>
+</html>
