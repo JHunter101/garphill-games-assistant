@@ -1372,4 +1372,15 @@ function setup() {
         gameActionTables[key] = weightedRandomTable(gameActionData[key]);
     }
     localStorage.setItem('actionTables', JSON.stringify(gameActionTables));
+    hide_elem('btn-setup');
+    hide_elem('main-menu');
+    unhide_elem('btn-draw');
+    unhide_elem('game');
+    draw();
+}
+function mainMenu() {
+    unhide_elem('btn-setup');
+    unhide_elem('main-menu');
+    hide_elem('btn-draw');
+    hide_elem('game');
 }
