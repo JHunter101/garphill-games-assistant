@@ -1,11 +1,10 @@
 "use strict";
 function draw() {
     const actionTables = JSON.parse(localStorage.getItem('actionTables'));
-    let str = '';
+    const actionBox = document.getElementById('action-text');
+    actionBox.innerHTML = '';
     for (const [key, value] of Object.entries(actionTables)) {
-        str += weightedRandom(actionTables[key])['text'];
-        str += '<br>';
+        const codedAction = weightedRandom(actionTables[key]);
+        actionBox.appendChild(decodeAction(codedAction));
     }
-    console.log(str);
-    document.getElementById('action-text').innerHTML = str;
 }

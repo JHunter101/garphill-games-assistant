@@ -2,13 +2,11 @@ function draw(): void {
   const actionTables = JSON.parse(
     localStorage.getItem('actionTables') as string,
   );
-  let str = '';
 
+  const actionBox = document.getElementById('action-text') as HTMLInputElement;
+  actionBox.innerHTML = '';
   for (const [key, value] of Object.entries(actionTables)) {
-    str += weightedRandom(actionTables[key])['text'];
-    str += '<br>';
+    const codedAction = weightedRandom(actionTables[key]);
+    actionBox.appendChild(decodeAction(codedAction));
   }
-
-  console.log(str);
-  (document.getElementById('action-text') as HTMLInputElement).innerHTML = str;
 }

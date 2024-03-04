@@ -9,71 +9,79 @@
       href="dep/fractal-api-v1.0.1/css/fractal-css.css"
     />
     <script src="dist/dep/fractal-api-v1.0.1/ts/basic.js"></script>
-    <script src="dist/dep/fractal-api-v1.0.1/ts/cookies.js"></script>
     <script src="dist/dep/fractal-api-v1.0.1/ts/random.js"></script>
     <script src="dist/dep/fractal-api-v1.0.1/ts/seed.js"></script>
     <script src="dist/dep/fractal-api-v1.0.1/ts/math.js"></script>
+    <script src="dist/src/ts/new.js"></script>
     <script src="dist/src/ts/setup.js"></script>
     <script src="dist/src/ts/draw.js"></script>
+    <script src="dist/src/ts/icon-data.js"></script>
+    <script src="dist/src/ts/action-data.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
-  <body class="section--fill-height">
-    <section id="buttons" class="section-container flex-container-row">
-      <button id="btn-setup" class="btn-medium btn-main" onclick="setup();">
-        Setup
-      </button>
-      <button id="btn-draw" class="btn-medium btn-main hidden" onclick="draw()">
-        Draw
-      </button>
-      <button
-        id="btn-main-menu"
-        class="btn-medium btn-main"
-        onclick="mainMenu()"
-      >
-        Main Menu
-      </button>
-    </section>
-    <section id="main-menu" class="section-container">
-      <div id="main-menu-message">
-        <h1 class="subtitle text--center">Garphil Games Assistant</h1>
-        <h2 class="header--large text--center">By Jack Chen</h3>
-        <p class='text--center'>
-          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
-        </p>
-        <p class='text--center'>
-          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
-        </p>
-      </div>
-      <form class="options-container">
-        <label>Game</label>
-        <select id="game-setting-game">
-          <option value="West Kingdom, Architects of the" selected>
-            Architects of the West Kingdom
-          </option>
-          <option value="West Kingdom, Paladins of the">
-            Paladins of the West Kingdom
-          </option>
-          <option value="West Kingdom, Viscounts of the">
-            Viscounts of the West Kingdom
-          </option>
-          <option value="South Tigris, Wayfarers of the">
-            Wayfarers of the South Tigris
-          </option>
-          <option value="South Tigris, Scholars of the">
-            Scholars of the South Tigris
-          </option>
-          <option value="South Tigris, Inventors of the">
-            Inventors of the South Tigris
-          </option>
-        </select>
-      </form>
-    </section>
-    <section id="game" class="section-container hidden">
-      <div class="">
-        <p id="setup-text"></p>
-        <p id="action-text"></p>
-      </div>
-    </section>
+  <body>
+    <main class="section--fill-height">
+      <section id="buttons" class="section-container flex-container-row">
+        <button id="btn-setup" class="btn-medium btn-main" onclick="setup();">
+          Setup
+        </button>
+        <button
+          id="btn-draw"
+          class="btn-medium btn-main hidden"
+          onclick="draw()"
+        >
+          Draw
+        </button>
+        <button
+          id="btn-main-menu"
+          class="btn-medium btn-main"
+          onclick="mainMenu()"
+        >
+          Main Menu
+        </button>
+      </section>
+      <section id="main-menu" class="section-container">
+        <div id="main-menu-message" class="hidden">
+          <h1 class="subtitle text--center">Garphil Games Assistant</h1>
+          <h2 class="header--large text--center">By Jack Chen</h2>
+          <p class="text--center">
+            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
+          </p>
+          <p class="text--center">
+            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
+          </p>
+        </div>
+        <form class="options-container">
+          <label>Game</label>
+          <select id="game-setting-game">
+            <option value="West Kingdom, Architects of the" selected>
+              Architects of the West Kingdom
+            </option>
+            <option value="West Kingdom, Paladins of the">
+              Paladins of the West Kingdom
+            </option>
+            <option value="West Kingdom, Viscounts of the">
+              Viscounts of the West Kingdom
+            </option>
+            <option value="South Tigris, Wayfarers of the">
+              Wayfarers of the South Tigris
+            </option>
+            <option value="South Tigris, Scholars of the">
+              Scholars of the South Tigris
+            </option>
+            <option value="South Tigris, Inventors of the">
+              Inventors of the South Tigris
+            </option>
+          </select>
+        </form>
+      </section>
+      <section id="game" class="section-container">
+        <div class="">
+          <p id="setup-text"></p>
+          <p id="action-text"></p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
