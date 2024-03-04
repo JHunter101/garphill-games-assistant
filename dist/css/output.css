@@ -571,6 +571,13 @@ video {
   top: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+  #action-text {
+    transform: scale(0.15);
+    height: 100dvw;
+  }
+}
+
 #action-text * {
   background: transparent;
 }
