@@ -2,6 +2,11 @@ image,code,type,name,desc,draw,end,stack,attachType,attachWhere,color,class-pare
 ,gen-if,connect,If,,TRUE,TRUE,FALSE,solid,solid,blue,dm-blue,
 ,gen-remind,connect,Warning: Reminder,,TRUE,TRUE,FALSE,solid,solid,blue,dm-blue,
 ,gen-then,connect,Then,,FALSE,TRUE,FALSE,solid,solid,green,dm-green,
+,gen-else,connect,Else,,TRUE,TRUE,FALSE,solid,solid,red,dm-red,
+,gen-force,connect,Warning: Mandatory,,FALSE,TRUE,FALSE,solid,solid,red,dm-red,
+,gen-here,color,,,FALSE,TRUE,FALSE,none,none,yellow,dm-yellow,
+,gen-inherit,connect,Inherit,,TRUE,FALSE,FALSE,solid,solid,yellow,dm-yellow,
+,gen-place,connect,Place,,TRUE,FALSE,TRUE,solid,solid,none,wrap-reverse,flex-100
 ,gen-bottommost,target-dir,Bottommost,,TRUE,TRUE,FALSE,hook,bottom,none,,"overlay,overlay-hm,overlay-vb"
 ,gen-tbm,target-dir,Bottom,,TRUE,TRUE,FALSE,hook,bottom,none,,"overlay,overlay-hm,overlay-vb"
 ,gen-tbl,target-dir,Bottom-Left,,TRUE,TRUE,FALSE,hook,bottom-left,none,,"overlay,overlay-hl,overlay-vb"
@@ -20,7 +25,6 @@ image,code,type,name,desc,draw,end,stack,attachType,attachWhere,color,class-pare
 ,gen-between,connect,Between,,TRUE,FALSE,FALSE,solid,solid,none,,
 ,gen-execute,connect,Execute,,TRUE,TRUE,FALSE,solid,solid,none,,
 ,gen-has,connect,Has,,TRUE,FALSE,FALSE,solid,solid,none,,
-,gen-place,connect,Place,,TRUE,FALSE,TRUE,solid,solid,none,wrap-reverse,flex-100
 ,aowk-cath,location,,,TRUE,TRUE,FALSE,solid,solid,none,,"overlay,overlay-hm,overlay-vm"
 ,gen-space--square,location,,,TRUE,TRUE,FALSE,solid,solid,none,,
 ,gen-space--worker,location,,,TRUE,TRUE,FALSE,solid,solid,none,,"overlay,overlay-hm,overlay-vb,overlay-behind"
@@ -54,10 +58,6 @@ image,code,type,name,desc,draw,end,stack,attachType,attachWhere,color,class-pare
 ,gen-09,target-num,9th,,TRUE,TRUE,FALSE,hook,top-right,none,,"overlay,overlay-hr,overlay-vt"
 ,gen-10,target-num,10th,,TRUE,TRUE,FALSE,hook,top-right,none,,"overlay,overlay-hr,overlay-vt"
 ,gen-var,target-num,Variable,,TRUE,TRUE,FALSE,hook,top-right,none,,"overlay,overlay-hr,overlay-vt"
-,gen-else,connect,Else,,TRUE,TRUE,FALSE,solid,solid,red,dm-red,
-,gen-force,connect,Warning: Mandatory,,TRUE,TRUE,FALSE,solid,solid,red,dm-red,
-,gen-here,color,,,FALSE,TRUE,FALSE,none,none,yellow,dm-yellow,
-,gen-inherit,connect,Inherit,,TRUE,FALSE,FALSE,solid,solid,yellow,dm-yellow,
 ,aowk-capture,action,,,TRUE,TRUE,FALSE,,middle,,,"overlay,overlay-hm,overlay-vm"
 ,gen-instant,action,,,TRUE,TRUE,FALSE,,middle,,,"overlay,overlay-hm,overlay-vm"
 ,gen-ongoing,action,,,TRUE,TRUE,FALSE,,middle,,,"overlay,overlay-hm,overlay-vm"
@@ -131,3 +131,4 @@ image,code,type,name,desc,draw,end,stack,attachType,attachWhere,color,class-pare
 ,gen-01-plus,,,,TRUE,TRUE,FALSE,,top-right,,,"overlay,overlay-hr,overlay-vt"
 ,gen-count,,,,TRUE,TRUE,FALSE,,top-right,,,"overlay,overlay-hr,overlay-vt"
 ,,connect,,,FALSE,TRUE,FALSE,,,,,
+,gen-space--card,location,,,TRUE,TRUE,FALSE,solid,solid,none,,

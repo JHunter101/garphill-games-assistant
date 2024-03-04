@@ -2628,7 +2628,94 @@ const myActionDatabase = {
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-01',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-01',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    e: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-01',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -2652,12 +2739,12 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': 'gen-gold',
+                        'mod-1': '',
                         'mod-2': '',
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -2687,99 +2774,12 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': 'gen-gold',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-01',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
                         'mod-1': '',
                         'mod-2': '',
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-01',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': '',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-01',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': 'gen-gold',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -2813,8 +2813,8 @@ const myActionDatabase = {
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
                         'mod-2': '',
                     },
                     a: {
@@ -2837,12 +2837,99 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': 'gen-gold',
+                        'mod-1': '',
                         'mod-2': '',
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-02',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    e: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-02',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-rightmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-02',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -2872,99 +2959,12 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': 'gen-gold',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-02',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
                         'mod-1': '',
                         'mod-2': '',
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-02',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': '',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-02',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': 'gen-gold',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -2998,7 +2998,94 @@ const myActionDatabase = {
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-03',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-03',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    e: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-03',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -3022,12 +3109,12 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': 'gen-gold',
+                        'mod-1': '',
                         'mod-2': '',
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -3057,99 +3144,12 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': 'gen-gold',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-03',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
                         'mod-1': '',
                         'mod-2': '',
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-03',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': '',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-03',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': 'gen-gold',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -3183,7 +3183,94 @@ const myActionDatabase = {
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-04',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-04',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    e: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-04',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -3207,12 +3294,12 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': 'gen-gold',
+                        'mod-1': '',
                         'mod-2': '',
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -3242,99 +3329,12 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': 'gen-gold',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-04',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
                         'mod-1': '',
                         'mod-2': '',
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-04',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': '',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-04',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': 'gen-gold',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -3368,7 +3368,94 @@ const myActionDatabase = {
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-05',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-05',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    e: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-05',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -3392,12 +3479,12 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': 'gen-gold',
+                        'mod-1': '',
                         'mod-2': '',
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -3427,99 +3514,12 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': 'gen-gold',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-05',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
                         'mod-1': '',
                         'mod-2': '',
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-05',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': '',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-05',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': 'gen-gold',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -3553,7 +3553,94 @@ const myActionDatabase = {
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-06',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-06',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    e: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-06',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -3577,12 +3664,12 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': 'gen-gold',
+                        'mod-1': '',
                         'mod-2': '',
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -3612,99 +3699,12 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': 'gen-gold',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-06',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
                         'mod-1': '',
                         'mod-2': '',
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-06',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': '',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-06',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': 'gen-gold',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -3738,7 +3738,94 @@ const myActionDatabase = {
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-07',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-07',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    e: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-07',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -3762,12 +3849,12 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': 'gen-gold',
+                        'mod-1': '',
                         'mod-2': '',
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -3797,99 +3884,12 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': 'gen-gold',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-07',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
                         'mod-1': '',
                         'mod-2': '',
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-07',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': '',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-07',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': 'gen-gold',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -3923,7 +3923,94 @@ const myActionDatabase = {
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-08',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-08',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    e: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: 'gen-and',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
+                        'mod-1': 'gen-leftmost',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--green',
+                        'mod-1': 'gen-08',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.02,
+            },
+            {
+                action: {
+                    c: {
+                        connect: 'gen-has',
+                        main: 'gen-gold',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -3947,12 +4034,12 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': 'gen-gold',
+                        'mod-1': '',
                         'mod-2': '',
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -3982,99 +4069,12 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': 'gen-gold',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-08',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
                         'mod-1': '',
                         'mod-2': '',
                     },
                     b: {
                         connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-08',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': '',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--green',
-                        'mod-1': 'gen-08',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.02,
-            },
-            {
-                action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    c: {
-                        connect: 'gen-has',
-                        main: 'gen-gold',
-                        'mod-1': 'gen-gold',
-                        'mod-2': 'gen-gold',
-                    },
-                    b: {
-                        connect: 'gen-place',
-                        main: '***',
+                        main: 'gen-space--card',
                         'mod-1': 'gen-rightmost',
                         'mod-2': '',
                     },
@@ -5775,12 +5775,6 @@ const myActionDatabase = {
                     },
                 },
                 weight: 0.11,
-            },
-        ],
-        '1': [
-            {
-                action: {},
-                weight: 1.0,
             },
         ],
     },
