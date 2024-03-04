@@ -24,7 +24,7 @@ function decodeAction(input) {
                     const iconData = myIconDatabase[iconCode];
                     subActionDiv.classList.add(...iconData['class-parent']);
                     if (myIconDatabase[subAction[objectPart]]['draw']) {
-                        const src = '/res/icons/' + iconData.code + '.png';
+                        const src = 'res/icons/' + iconData.code + '.png';
                         const classes = [objectPart];
                         if (objectPart != 'main') {
                             classes.push(...iconData['class-self']);
@@ -45,7 +45,7 @@ function decodeAction(input) {
             subActionDiv = createObjectDiv(subActionDiv, subAction);
             const connect = subAction.connect;
             if (myIconDatabase[connect]['draw']) {
-                const src = '/res/icons/' + myIconDatabase[connect].code + '.png';
+                const src = 'res/icons/' + myIconDatabase[connect].code + '.png';
                 const classes = ['connect'];
                 classes.push(...myIconDatabase[connect]['class-self']);
                 subActionDiv.appendChild(quickImage(src, classes, []));
