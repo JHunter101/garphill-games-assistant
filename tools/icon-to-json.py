@@ -4,7 +4,7 @@ import json
 
 def csvToJSON(csvFile, jsonFile):
     df = pd.read_csv(csvFile)
-    df.fillna("", inplace=True)  # Replace NaN with empty string
+    df.fillna("", inplace=True)
 
     output = {}
 

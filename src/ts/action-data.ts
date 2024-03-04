@@ -4,7 +4,7 @@ const myActionDatabase: actionDatabase = {
       {
         action: {
           c: {
-            connect: 'gen-and',
+            connect: '',
             main: 'aowk-cath',
             'mod-1': 'gen-upgrade',
             'mod-2': '',
@@ -4807,74 +4807,56 @@ const myActionDatabase: actionDatabase = {
     '2': [
       {
         action: {
-          c: {
-            connect: 'gen-execute',
-            main: 'iost-workshop',
-            'mod-1': 'gen-discard',
-            'mod-2': '',
-          },
           b: {
             connect: '',
-            main: 'iost-ship',
-            'mod-1': 'gen-here',
-            'mod-2': '',
+            main: 'gen-execute',
+            'mod-1': 'iost-workshop',
+            'mod-2': 'gen-discard',
           },
           a: {
             connect: '',
             main: 'iost-ship',
             'mod-1': 'gen-01',
-            'mod-2': '',
+            'mod-2': 'gen-here',
           },
         },
-        weight: 0.5,
+        weight: 0.25,
       },
       {
         action: {
-          c: {
-            connect: 'gen-execute',
-            main: 'iost-workshop',
-            'mod-1': 'gen-discard',
-            'mod-2': '',
-          },
           b: {
             connect: '',
-            main: 'iost-ship',
-            'mod-1': 'gen-here',
-            'mod-2': '',
+            main: 'gen-execute',
+            'mod-1': 'iost-workshop',
+            'mod-2': 'gen-discard',
           },
           a: {
             connect: '',
             main: 'iost-ship',
             'mod-1': 'gen-02',
-            'mod-2': '',
+            'mod-2': 'gen-here',
           },
         },
-        weight: 0.5,
+        weight: 0.25,
       },
       {
         action: {
-          d: {
+          c: {
             connect: 'gen-else',
             main: 'iost-device-board',
             'mod-1': 'gen-bottommost',
             'mod-2': '',
           },
-          c: {
+          b: {
             connect: 'gen-place',
             main: 'iost-device-board',
             'mod-1': 'gen-01',
             'mod-2': '',
           },
-          b: {
-            connect: 'gen-and',
-            main: 'iost-invent',
-            'mod-1': '',
-            'mod-2': '',
-          },
           a: {
             connect: '',
             main: 'gen-card--brown',
-            'mod-1': '',
+            'mod-1': 'iost-invent',
             'mod-2': '',
           },
         },
@@ -4882,28 +4864,22 @@ const myActionDatabase: actionDatabase = {
       },
       {
         action: {
-          d: {
+          c: {
             connect: 'gen-else',
             main: 'iost-device-board',
             'mod-1': 'gen-bottommost',
             'mod-2': '',
           },
-          c: {
+          b: {
             connect: 'gen-place',
             main: 'iost-device-board',
             'mod-1': 'gen-02',
             'mod-2': '',
           },
-          b: {
-            connect: 'gen-and',
-            main: 'iost-invent',
-            'mod-1': '',
-            'mod-2': '',
-          },
           a: {
             connect: '',
             main: 'gen-card--brown',
-            'mod-1': '',
+            'mod-1': 'iost-invent',
             'mod-2': '',
           },
         },
@@ -4911,28 +4887,22 @@ const myActionDatabase: actionDatabase = {
       },
       {
         action: {
-          d: {
+          c: {
             connect: 'gen-else',
             main: 'iost-device-board',
             'mod-1': 'gen-bottommost',
             'mod-2': '',
           },
-          c: {
+          b: {
             connect: 'gen-place',
             main: 'iost-device-board',
             'mod-1': 'gen-03',
             'mod-2': '',
           },
-          b: {
-            connect: 'gen-and',
-            main: 'iost-invent',
-            'mod-1': '',
-            'mod-2': '',
-          },
           a: {
             connect: '',
             main: 'gen-card--brown',
-            'mod-1': '',
+            'mod-1': 'iost-invent',
             'mod-2': '',
           },
         },
@@ -4940,28 +4910,22 @@ const myActionDatabase: actionDatabase = {
       },
       {
         action: {
-          d: {
+          c: {
             connect: 'gen-else',
             main: 'iost-device-board',
             'mod-1': 'gen-bottommost',
             'mod-2': '',
           },
-          c: {
+          b: {
             connect: 'gen-place',
             main: 'iost-device-board',
             'mod-1': 'gen-04',
             'mod-2': '',
           },
-          b: {
-            connect: 'gen-and',
-            main: 'iost-invent',
-            'mod-1': '',
-            'mod-2': '',
-          },
           a: {
             connect: '',
             main: 'gen-card--brown',
-            'mod-1': '',
+            'mod-1': 'iost-invent',
             'mod-2': '',
           },
         },
@@ -5635,26 +5599,7 @@ const myActionDatabase: actionDatabase = {
         weight: 0.14,
       },
       {
-        action: {
-          c: {
-            connect: 'gen-else',
-            main: 'iost-research',
-            'mod-1': 'gen-rightmost',
-            'mod-2': '',
-          },
-          b: {
-            connect: 'gen-place',
-            main: 'iost-research',
-            'mod-1': 'gen-instant',
-            'mod-2': 'gen-03',
-          },
-          a: {
-            connect: '',
-            main: 'gen-influence',
-            'mod-1': '',
-            'mod-2': '',
-          },
-        },
+        action: {},
         weight: 6.0,
       },
     ],

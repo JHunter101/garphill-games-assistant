@@ -62,15 +62,15 @@ function decodeAction(input: codedAction) {
         const iconCode = subAction[objectPart];
         if (iconCode) {
           const iconData = myIconDatabase[iconCode];
-          if (iconData['class-parent'].length > 0) {
-            subActionDiv.classList.add(...iconData['class-parent']);
+          subActionDiv.classList.add(...iconData['class-parent']);
+          if (myIconDatabase[subAction[objectPart]]['draw']) {
+            const src = '/res/icons/' + iconData.code + '.png';
+            const classes: string[] = [objectPart];
+            if (objectPart != 'main') {
+              classes.push(...iconData['class-self']);
+            }
+            objectDiv.appendChild(quickImage(src, classes, []));
           }
-          const src = '/res/icons/' + iconData.code + '.png';
-          const classes: string[] = [objectPart];
-          if (iconData['class-self'].length > 0 && objectPart != 'main') {
-            classes.push(...iconData['class-self']);
-          }
-          objectDiv.appendChild(quickImage(src, classes, []));
         }
       }
     });
@@ -87,24 +87,16 @@ function decodeAction(input: codedAction) {
       subActionDiv = createObjectDiv(subActionDiv, subAction);
 
       const connect = subAction.connect;
-      if (connect !== 'gen-and') {
-        if (connect !== '') {
-          if (myIconDatabase[connect]['class-parent'].length > 0) {
-            subActionDiv.classList.add(
-              ...myIconDatabase[connect]['class-parent'],
-            );
-          }
-          const src = '/res/icons/' + myIconDatabase[connect].code + '.png';
-          const classes = ['connect'];
-          if (myIconDatabase[connect]['class-self'].length > 0) {
-            classes.push(...myIconDatabase[connect]['class-self']);
-          }
-          subActionDiv.appendChild(quickImage(src, classes, []));
-        }
-        if (connect !== 'gen-place') {
-          actionDiv.appendChild(subActionDiv);
-          subActionDiv = document.createElement('div');
-        }
+      if (myIconDatabase[connect]['draw']) {
+        const src = '/res/icons/' + myIconDatabase[connect].code + '.png';
+        const classes = ['connect'];
+        classes.push(...myIconDatabase[connect]['class-self']);
+        subActionDiv.appendChild(quickImage(src, classes, []));
+      }
+      subActionDiv.classList.add(...myIconDatabase[connect]['class-parent']);
+      if (myIconDatabase[connect]['end']) {
+        actionDiv.appendChild(subActionDiv);
+        subActionDiv = document.createElement('div');
       }
     }
   });

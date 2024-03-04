@@ -526,12 +526,20 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.overlay-shrunk {
+  transform: scale(0.75) translate(-66.67%, -66.67%) !important;
+}
+
+.overlay-enlarge {
+  transform: scale(1.5) translate(-33.33%, -33.33%) !important;
+}
+
 .overlay-behind {
   z-index: 0 !important;
 }
 
-.w-150 {
-  width: 150%;
+.w-200 {
+  width: 200%;
 }
 
 .overlay {
@@ -568,9 +576,10 @@ video {
 }
 
 .action img {
-  max-width: min(24vw, 8rem);
-  max-height: min(24vw, 8rem);
   height: unset;
+  width: unset;
+  max-width: unset;
+  max-height: unset;
   background: transparent;
 }
 
@@ -594,7 +603,7 @@ video {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: min(5vh, 2.5rem);
+  padding: min(6vw, 2rem);
 }
 
 .action,
@@ -603,20 +612,22 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: min(5vh, 2.5rem);
+  margin: min(15vw, 5rem);
 }
 
 .action {
   width: 100%;
   flex-direction: row-reverse;
   flex: 1;
-  padding: min(5vh, 2.5rem);
+  padding: min(30vw, 10rem);
   border: 2px solid var(--accent-bg-color);
+  padding: 0 min(15vw, 5rem);
 }
 
 .subaction {
   flex-direction: row-reverse;
   flex: 1;
+  padding: 0 min(15vw, 5rem);
 }
 
 .object {
