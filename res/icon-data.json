@@ -4,7 +4,7 @@
         "type": "connect",
         "name": "If",
         "desc": "",
-        "draw": true,
+        "draw": false,
         "end": true,
         "stack": false,
         "attachType": "solid",
@@ -20,7 +20,7 @@
         "type": "connect",
         "name": "Warning: Reminder",
         "desc": "",
-        "draw": true,
+        "draw": false,
         "end": true,
         "stack": false,
         "attachType": "solid",
@@ -52,7 +52,7 @@
         "type": "connect",
         "name": "Else",
         "desc": "",
-        "draw": true,
+        "draw": false,
         "end": true,
         "stack": false,
         "attachType": "solid",
@@ -467,7 +467,13 @@
         "attachWhere": "solid",
         "color": "none",
         "class-parent": [],
-        "class-self": []
+        "class-self": [
+            "overlay",
+            "overlay-hm",
+            "overlay-vm",
+            "overlay-enlarge",
+            "overlay-behind"
+        ]
     },
     "gen-space--worker": {
         "code": "gen-space--worker",
@@ -737,7 +743,8 @@
         "class-self": [
             "overlay",
             "overlay-hm",
-            "overlay-vm"
+            "overlay-vm",
+            "overlay-tiny"
         ]
     },
     "gen-topmost": {
@@ -791,7 +798,8 @@
         "class-self": [
             "overlay",
             "overlay-hm",
-            "overlay-vt"
+            "overlay-vt",
+            "overlay-shrunk"
         ]
     },
     "gen-ttl": {
@@ -1097,7 +1105,8 @@
         "class-self": [
             "overlay",
             "overlay-hm",
-            "overlay-vm"
+            "overlay-vm",
+            "overlay-tiny"
         ]
     },
     "aowk-build": {

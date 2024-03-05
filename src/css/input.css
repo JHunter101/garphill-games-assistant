@@ -6,6 +6,10 @@
   transform: scale(0.75) translate(-66.67%, -66.67%) !important;
 }
 
+.overlay-tiny {
+  transform: scale(0.5) translate(-100%, -100%) !important;
+}
+
 .overlay-enlarge {
   transform: scale(1.5) translate(-33.33%, -33.33%) !important;
 }
@@ -67,12 +71,10 @@
 }
 
 .wrap {
-  flex-direction: unset;
   flex-wrap: wrap;
 }
 
 .wrap-reverse {
-  flex-direction: unset !important;
   flex-wrap: wrap-reverse;
 }
 
@@ -111,6 +113,8 @@
   flex-direction: row-reverse;
   flex: 1;
   padding: 0 min(15vw, 5rem);
+  height: 100%;
+  width: 100%;
 }
 
 .object {

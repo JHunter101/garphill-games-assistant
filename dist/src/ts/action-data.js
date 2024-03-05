@@ -23,7 +23,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.75,
+                weight: 1.0,
             },
             {
                 action: {
@@ -40,7 +40,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.75,
+                weight: 1.0,
             },
             {
                 action: {
@@ -57,7 +57,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 1.0,
+                weight: 0.33,
             },
             {
                 action: {
@@ -74,7 +74,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 1.0,
+                weight: 0.33,
             },
             {
                 action: {
@@ -91,7 +91,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 1.0,
+                weight: 0.33,
             },
             {
                 action: {
@@ -108,7 +108,215 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 1.0,
+                weight: 0.33,
+            },
+            {
+                action: {
+                    c: {
+                        connect: 'gen-place',
+                        main: 'gen-gold',
+                        'mod-1': 'gen-space--worker',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-and',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.5,
+            },
+            {
+                action: {
+                    c: {
+                        connect: 'gen-place',
+                        main: 'gen-stone',
+                        'mod-1': 'gen-space--worker',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-and',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.5,
+            },
+            {
+                action: {
+                    c: {
+                        connect: 'gen-place',
+                        main: 'gen-coin',
+                        'mod-1': 'gen-space--worker',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-and',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.5,
+            },
+            {
+                action: {
+                    c: {
+                        connect: 'gen-place',
+                        main: 'gen-wood',
+                        'mod-1': 'gen-space--worker',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-and',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.5,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-place',
+                        main: 'gen-gold',
+                        'mod-1': 'gen-space--worker',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-and',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-and',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.17,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-place',
+                        main: 'gen-stone',
+                        'mod-1': 'gen-space--worker',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-and',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-and',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.17,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-place',
+                        main: 'gen-coin',
+                        'mod-1': 'gen-space--worker',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-and',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-and',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.17,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-place',
+                        main: 'gen-wood',
+                        'mod-1': 'gen-space--worker',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-and',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-and',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-worker',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.17,
             },
             {
                 action: {
@@ -408,7 +616,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.5,
+                weight: 1.0,
             },
             {
                 action: {
@@ -530,7 +738,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.25,
+                weight: 0.17,
             },
             {
                 action: {
@@ -547,11 +755,34 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.25,
+                weight: 0.33,
+            },
+            {
+                action: {
+                    c: {
+                        connect: 'gen-and',
+                        main: 'gen-tax',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-and',
+                        main: 'gen-tax',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-tax',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.17,
             },
             {
                 action: {},
-                weight: 1.0,
+                weight: 2.0,
             },
         ],
     },
@@ -836,7 +1067,7 @@ const myActionDatabase = {
                         'mod-2': 'gen-01',
                     },
                 },
-                weight: 0.09,
+                weight: 0.2,
             },
             {
                 action: {
@@ -847,7 +1078,7 @@ const myActionDatabase = {
                         'mod-2': 'gen-02',
                     },
                 },
-                weight: 0.09,
+                weight: 0.2,
             },
             {
                 action: {
@@ -858,7 +1089,7 @@ const myActionDatabase = {
                         'mod-2': 'gen-03',
                     },
                 },
-                weight: 0.09,
+                weight: 0.2,
             },
             {
                 action: {
@@ -869,7 +1100,7 @@ const myActionDatabase = {
                         'mod-2': 'gen-04',
                     },
                 },
-                weight: 0.09,
+                weight: 0.2,
             },
             {
                 action: {
@@ -880,7 +1111,7 @@ const myActionDatabase = {
                         'mod-2': 'gen-05',
                     },
                 },
-                weight: 0.09,
+                weight: 0.2,
             },
             {
                 action: {
@@ -891,7 +1122,7 @@ const myActionDatabase = {
                         'mod-2': 'gen-01',
                     },
                 },
-                weight: 0.09,
+                weight: 0.2,
             },
             {
                 action: {
@@ -902,7 +1133,7 @@ const myActionDatabase = {
                         'mod-2': 'gen-02',
                     },
                 },
-                weight: 0.09,
+                weight: 0.2,
             },
             {
                 action: {
@@ -913,7 +1144,7 @@ const myActionDatabase = {
                         'mod-2': 'gen-03',
                     },
                 },
-                weight: 0.09,
+                weight: 0.2,
             },
             {
                 action: {
@@ -924,7 +1155,7 @@ const myActionDatabase = {
                         'mod-2': 'gen-04',
                     },
                 },
-                weight: 0.09,
+                weight: 0.2,
             },
             {
                 action: {
@@ -935,7 +1166,7 @@ const myActionDatabase = {
                         'mod-2': 'gen-05',
                     },
                 },
-                weight: 0.09,
+                weight: 0.2,
             },
             {
                 action: {
@@ -946,7 +1177,7 @@ const myActionDatabase = {
                         'mod-2': 'gen-max',
                     },
                 },
-                weight: 0.09,
+                weight: 1.0,
             },
             {
                 action: {
@@ -959,8 +1190,8 @@ const myActionDatabase = {
                     b: {
                         connect: 'gen-place',
                         main: 'gen-space--square',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': 'gen-leftmost',
+                        'mod-1': 'gen-tbl',
+                        'mod-2': '',
                     },
                     a: {
                         connect: '',
@@ -982,8 +1213,8 @@ const myActionDatabase = {
                     b: {
                         connect: 'gen-place',
                         main: 'gen-space--square',
-                        'mod-1': 'gen-leftmost',
-                        'mod-2': 'gen-rightmost',
+                        'mod-1': 'gen-ttr',
+                        'mod-2': '',
                     },
                     a: {
                         connect: '',
@@ -1005,8 +1236,8 @@ const myActionDatabase = {
                     b: {
                         connect: 'gen-place',
                         main: 'gen-space--square',
-                        'mod-1': 'gen-rightmost',
-                        'mod-2': 'gen-leftmost',
+                        'mod-1': 'gen-tbl',
+                        'mod-2': '',
                     },
                     a: {
                         connect: '',
@@ -1028,8 +1259,8 @@ const myActionDatabase = {
                     b: {
                         connect: 'gen-place',
                         main: 'gen-space--square',
-                        'mod-1': 'gen-leftmost',
-                        'mod-2': 'gen-rightmost',
+                        'mod-1': 'gen-ttr',
+                        'mod-2': '',
                     },
                     a: {
                         connect: '',
@@ -1089,7 +1320,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.5,
+                weight: 0.33,
             },
             {
                 action: {
@@ -1112,7 +1343,18 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.5,
+                weight: 0.33,
+            },
+            {
+                action: {
+                    a: {
+                        connect: '',
+                        main: 'gen-card--purple',
+                        'mod-1': 'gen-discard',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.33,
             },
             {
                 action: {},
@@ -1244,8 +1486,8 @@ const myActionDatabase = {
                     e: {
                         connect: 'gen-inherit',
                         main: 'gen-player',
-                        'mod-1': 'vowk-nobility',
-                        'mod-2': 'gen-max',
+                        'mod-1': 'gen-max',
+                        'mod-2': 'vowk-nobility',
                     },
                     d: {
                         connect: 'gen-place',
@@ -1279,8 +1521,8 @@ const myActionDatabase = {
                     e: {
                         connect: 'gen-inherit',
                         main: 'gen-player',
-                        'mod-1': 'vowk-nobility',
-                        'mod-2': 'gen-max',
+                        'mod-1': 'gen-max',
+                        'mod-2': 'vowk-nobility',
                     },
                     d: {
                         connect: 'gen-place',
@@ -1314,8 +1556,8 @@ const myActionDatabase = {
                     e: {
                         connect: 'gen-inherit',
                         main: 'gen-player',
-                        'mod-1': 'vowk-nobility',
-                        'mod-2': 'gen-max',
+                        'mod-1': 'gen-max',
+                        'mod-2': 'vowk-nobility',
                     },
                     d: {
                         connect: 'gen-place',
@@ -1349,8 +1591,8 @@ const myActionDatabase = {
                     e: {
                         connect: 'gen-inherit',
                         main: 'gen-player',
-                        'mod-1': 'vowk-nobility',
-                        'mod-2': 'gen-max',
+                        'mod-1': 'gen-max',
+                        'mod-2': 'vowk-nobility',
                     },
                     d: {
                         connect: 'gen-place',
@@ -1384,8 +1626,8 @@ const myActionDatabase = {
                     e: {
                         connect: 'gen-inherit',
                         main: 'gen-player',
-                        'mod-1': 'vowk-nobility',
-                        'mod-2': 'gen-max',
+                        'mod-1': 'gen-max',
+                        'mod-2': 'vowk-nobility',
                     },
                     d: {
                         connect: 'gen-place',
@@ -1503,8 +1745,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-leftmost',
                     },
                     b: {
@@ -1526,8 +1768,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-leftmost',
                     },
                     b: {
@@ -1549,8 +1791,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-leftmost',
                     },
                     b: {
@@ -1572,8 +1814,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-leftmost',
                     },
                     b: {
@@ -1595,8 +1837,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-leftmost',
                     },
                     b: {
@@ -1618,8 +1860,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-leftmost',
                     },
                     b: {
@@ -1641,8 +1883,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-leftmost',
                     },
                     b: {
@@ -1664,8 +1906,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-leftmost',
                     },
                     b: {
@@ -1687,8 +1929,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-leftmost',
                     },
                     b: {
@@ -1710,8 +1952,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-leftmost',
                     },
                     b: {
@@ -1733,8 +1975,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-rightmost',
                     },
                     b: {
@@ -1756,8 +1998,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-rightmost',
                     },
                     b: {
@@ -1779,8 +2021,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-rightmost',
                     },
                     b: {
@@ -1802,8 +2044,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-rightmost',
                     },
                     b: {
@@ -1825,8 +2067,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-rightmost',
                     },
                     b: {
@@ -1848,8 +2090,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-rightmost',
                     },
                     b: {
@@ -1871,8 +2113,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-rightmost',
                     },
                     b: {
@@ -1894,8 +2136,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-rightmost',
                     },
                     b: {
@@ -1917,8 +2159,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-rightmost',
                     },
                     b: {
@@ -1940,8 +2182,8 @@ const myActionDatabase = {
                 action: {
                     c: {
                         connect: 'gen-place',
-                        main: 'vowk-builder',
-                        'mod-1': 'gen-space--square',
+                        main: 'gen-space--square',
+                        'mod-1': 'vowk-builder',
                         'mod-2': 'gen-rightmost',
                     },
                     b: {
@@ -1961,7 +2203,7 @@ const myActionDatabase = {
             },
             {
                 action: {},
-                weight: 2.0,
+                weight: 4.5,
             },
         ],
         '3': [
@@ -1982,11 +2224,11 @@ const myActionDatabase = {
                     a: {
                         connect: '',
                         main: 'gen-player--all',
-                        'mod-1': '',
+                        'mod-1': 'gen-execute',
                         'mod-2': '',
                     },
                 },
-                weight: 0.25,
+                weight: 0.04,
             },
             {
                 action: {
@@ -2005,11 +2247,11 @@ const myActionDatabase = {
                     a: {
                         connect: '',
                         main: 'gen-player--all',
-                        'mod-1': '',
+                        'mod-1': 'gen-execute',
                         'mod-2': '',
                     },
                 },
-                weight: 0.5,
+                weight: 0.07,
             },
             {
                 action: {
@@ -2028,11 +2270,11 @@ const myActionDatabase = {
                     a: {
                         connect: '',
                         main: 'gen-player--all',
-                        'mod-1': '',
+                        'mod-1': 'gen-execute',
                         'mod-2': '',
                     },
                 },
-                weight: 1.0,
+                weight: 0.14,
             },
             {
                 action: {
@@ -2045,11 +2287,11 @@ const myActionDatabase = {
                     a: {
                         connect: '',
                         main: 'gen-player--all',
-                        'mod-1': '',
+                        'mod-1': 'gen-execute',
                         'mod-2': '',
                     },
                 },
-                weight: 0.75,
+                weight: 0.11,
             },
             {
                 action: {
@@ -2068,11 +2310,11 @@ const myActionDatabase = {
                     a: {
                         connect: '',
                         main: 'gen-player--all',
-                        'mod-1': '',
+                        'mod-1': 'gen-execute',
                         'mod-2': '',
                     },
                 },
-                weight: 1.0,
+                weight: 0.14,
             },
             {
                 action: {
@@ -2091,11 +2333,11 @@ const myActionDatabase = {
                     a: {
                         connect: '',
                         main: 'gen-player--all',
-                        'mod-1': '',
+                        'mod-1': 'gen-execute',
                         'mod-2': '',
                     },
                 },
-                weight: 0.5,
+                weight: 0.07,
             },
             {
                 action: {
@@ -2114,11 +2356,11 @@ const myActionDatabase = {
                     a: {
                         connect: '',
                         main: 'gen-player--all',
-                        'mod-1': '',
+                        'mod-1': 'gen-execute',
                         'mod-2': '',
                     },
                 },
-                weight: 0.25,
+                weight: 0.04,
             },
             {
                 action: {
@@ -2129,7 +2371,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.1,
+                weight: 0.2,
             },
             {
                 action: {
@@ -2146,7 +2388,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.1,
+                weight: 0.2,
             },
             {
                 action: {
@@ -2163,7 +2405,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.1,
+                weight: 0.2,
             },
             {
                 action: {
@@ -2174,7 +2416,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.1,
+                weight: 0.2,
             },
             {
                 action: {
@@ -2191,11 +2433,11 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.1,
+                weight: 0.2,
             },
             {
                 action: {},
-                weight: 9.5,
+                weight: 10.0,
             },
         ],
     },
@@ -2429,179 +2671,179 @@ const myActionDatabase = {
         '3': [
             {
                 action: {
-                    e: {
+                    d: {
                         connect: 'gen-execute',
                         main: 'gen-provision',
                         'mod-1': 'gen-gain',
                         'mod-2': '',
                     },
-                    d: {
+                    c: {
                         connect: 'gen-then',
                         main: 'gen-player',
                         'mod-1': '',
                         'mod-2': '',
                     },
-                    c: {
+                    b: {
                         connect: 'gen-has',
                         main: 'gen-influence',
                         'mod-1': '',
                         'mod-2': '',
                     },
-                    b: {
+                    a: {
                         connect: 'gen-if',
                         main: 'gen-card',
                         'mod-1': 'gen-discard',
                         'mod-2': '',
                     },
                 },
-                weight: 0.5,
+                weight: 1.0,
             },
             {
                 action: {
-                    e: {
+                    d: {
                         connect: 'gen-execute',
                         main: 'gen-coin',
                         'mod-1': 'gen-gain',
                         'mod-2': '',
                     },
-                    d: {
+                    c: {
                         connect: 'gen-then',
                         main: 'gen-player',
                         'mod-1': '',
                         'mod-2': '',
                     },
-                    c: {
+                    b: {
                         connect: 'gen-has',
                         main: 'gen-influence',
                         'mod-1': '',
                         'mod-2': '',
                     },
-                    b: {
+                    a: {
                         connect: 'gen-if',
                         main: 'gen-card',
                         'mod-1': 'gen-discard',
                         'mod-2': '',
                     },
                 },
-                weight: 0.5,
+                weight: 1.0,
             },
         ],
         '4': [
             {
                 action: {
-                    e: {
+                    d: {
                         connect: 'gen-place',
                         main: 'gen-card',
                         'mod-1': 'gen-01',
                         'mod-2': '',
                     },
-                    d: {
+                    c: {
                         connect: 'gen-then',
                         main: 'gen-worker',
                         'mod-1': '',
                         'mod-2': '',
                     },
-                    c: {
+                    b: {
                         connect: 'gen-has',
                         main: 'gen-worker',
                         'mod-1': '',
                         'mod-2': '',
                     },
-                    b: {
+                    a: {
                         connect: 'gen-if',
                         main: 'gen-card',
                         'mod-1': 'gen-discard',
                         'mod-2': '',
                     },
                 },
-                weight: 0.25,
+                weight: 1.0,
             },
             {
                 action: {
-                    e: {
+                    d: {
                         connect: 'gen-place',
                         main: 'gen-card',
                         'mod-1': 'gen-02',
                         'mod-2': '',
                     },
-                    d: {
+                    c: {
                         connect: 'gen-then',
                         main: 'gen-worker',
                         'mod-1': '',
                         'mod-2': '',
                     },
-                    c: {
+                    b: {
                         connect: 'gen-has',
                         main: 'gen-worker',
                         'mod-1': '',
                         'mod-2': '',
                     },
-                    b: {
+                    a: {
                         connect: 'gen-if',
                         main: 'gen-card',
                         'mod-1': 'gen-discard',
                         'mod-2': '',
                     },
                 },
-                weight: 0.25,
+                weight: 1.0,
             },
             {
                 action: {
-                    e: {
+                    d: {
                         connect: 'gen-place',
                         main: 'gen-card',
                         'mod-1': 'gen-03',
                         'mod-2': '',
                     },
-                    d: {
+                    c: {
                         connect: 'gen-then',
                         main: 'gen-worker',
                         'mod-1': '',
                         'mod-2': '',
                     },
-                    c: {
+                    b: {
                         connect: 'gen-has',
                         main: 'gen-worker',
                         'mod-1': '',
                         'mod-2': '',
                     },
-                    b: {
+                    a: {
                         connect: 'gen-if',
                         main: 'gen-card',
                         'mod-1': 'gen-discard',
                         'mod-2': '',
                     },
                 },
-                weight: 0.25,
+                weight: 1.0,
             },
             {
                 action: {
-                    e: {
+                    d: {
                         connect: 'gen-place',
                         main: 'gen-card',
                         'mod-1': 'gen-04',
                         'mod-2': '',
                     },
-                    d: {
+                    c: {
                         connect: 'gen-then',
                         main: 'gen-worker',
                         'mod-1': '',
                         'mod-2': '',
                     },
-                    c: {
+                    b: {
                         connect: 'gen-has',
                         main: 'gen-worker',
                         'mod-1': '',
                         'mod-2': '',
                     },
-                    b: {
+                    a: {
                         connect: 'gen-if',
                         main: 'gen-card',
                         'mod-1': 'gen-discard',
                         'mod-2': '',
                     },
                 },
-                weight: 0.25,
+                weight: 1.0,
             },
         ],
     },
@@ -4089,6 +4331,18 @@ const myActionDatabase = {
             },
             {
                 action: {
+                    e: {
+                        connect: 'gen-place',
+                        main: 'gen-guild--purple',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
                     c: {
                         connect: 'gen-place',
                         main: 'gen-guild--purple',
@@ -4108,10 +4362,22 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.06,
+                weight: 0.08,
             },
             {
                 action: {
+                    e: {
+                        connect: 'gen-place',
+                        main: 'gen-guild--orange',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
                     c: {
                         connect: 'gen-place',
                         main: 'gen-guild--orange',
@@ -4131,10 +4397,22 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.06,
+                weight: 0.08,
             },
             {
                 action: {
+                    e: {
+                        connect: 'gen-place',
+                        main: 'gen-guild--green',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
                     c: {
                         connect: 'gen-place',
                         main: 'gen-guild--green',
@@ -4154,10 +4432,22 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.06,
+                weight: 0.08,
             },
             {
                 action: {
+                    e: {
+                        connect: 'gen-place',
+                        main: 'gen-guild--purple',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
                     c: {
                         connect: 'gen-place',
                         main: 'gen-guild--purple',
@@ -4177,10 +4467,22 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.06,
+                weight: 0.08,
             },
             {
                 action: {
+                    e: {
+                        connect: 'gen-place',
+                        main: 'gen-guild--orange',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
                     c: {
                         connect: 'gen-place',
                         main: 'gen-guild--orange',
@@ -4200,10 +4502,22 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.06,
+                weight: 0.08,
             },
             {
                 action: {
+                    e: {
+                        connect: 'gen-place',
+                        main: 'gen-guild--green',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
                     c: {
                         connect: 'gen-place',
                         main: 'gen-guild--green',
@@ -4223,10 +4537,22 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.06,
+                weight: 0.08,
             },
             {
                 action: {
+                    e: {
+                        connect: 'gen-place',
+                        main: 'gen-guild--purple',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
                     c: {
                         connect: 'gen-place',
                         main: 'gen-guild--purple',
@@ -4246,10 +4572,22 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.06,
+                weight: 0.08,
             },
             {
                 action: {
+                    e: {
+                        connect: 'gen-place',
+                        main: 'gen-guild--orange',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
                     c: {
                         connect: 'gen-place',
                         main: 'gen-guild--orange',
@@ -4269,10 +4607,22 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.06,
+                weight: 0.08,
             },
             {
                 action: {
+                    e: {
+                        connect: 'gen-place',
+                        main: 'gen-guild--green',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
                     c: {
                         connect: 'gen-place',
                         main: 'gen-guild--green',
@@ -4292,10 +4642,22 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.06,
+                weight: 0.08,
             },
             {
                 action: {
+                    e: {
+                        connect: 'gen-place',
+                        main: 'gen-guild--purple',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
                     c: {
                         connect: 'gen-place',
                         main: 'gen-guild--purple',
@@ -4315,10 +4677,22 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.06,
+                weight: 0.08,
             },
             {
                 action: {
+                    e: {
+                        connect: 'gen-place',
+                        main: 'gen-guild--orange',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
                     c: {
                         connect: 'gen-place',
                         main: 'gen-guild--orange',
@@ -4338,10 +4712,22 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.06,
+                weight: 0.08,
             },
             {
                 action: {
+                    e: {
+                        connect: 'gen-place',
+                        main: 'gen-guild--green',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
                     c: {
                         connect: 'gen-place',
                         main: 'gen-guild--green',
@@ -4361,10 +4747,22 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.06,
+                weight: 0.08,
             },
             {
                 action: {
+                    e: {
+                        connect: 'gen-place',
+                        main: 'gen-guild--purple',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
                     c: {
                         connect: 'gen-place',
                         main: 'gen-guild--purple',
@@ -4384,10 +4782,22 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.06,
+                weight: 0.08,
             },
             {
                 action: {
+                    e: {
+                        connect: 'gen-place',
+                        main: 'gen-guild--orange',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
                     c: {
                         connect: 'gen-place',
                         main: 'gen-guild--orange',
@@ -4407,10 +4817,22 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.06,
+                weight: 0.08,
             },
             {
                 action: {
+                    e: {
+                        connect: 'gen-place',
+                        main: 'gen-guild--green',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
                     c: {
                         connect: 'gen-place',
                         main: 'gen-guild--green',
@@ -4430,10 +4852,22 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.06,
+                weight: 0.08,
             },
             {
                 action: {
+                    e: {
+                        connect: 'gen-place',
+                        main: 'gen-guild--purple',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
                     c: {
                         connect: 'gen-place',
                         main: 'gen-guild--purple',
@@ -4453,10 +4887,22 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.06,
+                weight: 0.08,
             },
             {
                 action: {
+                    e: {
+                        connect: 'gen-place',
+                        main: 'gen-guild--orange',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
                     c: {
                         connect: 'gen-place',
                         main: 'gen-guild--orange',
@@ -4476,10 +4922,22 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.06,
+                weight: 0.08,
             },
             {
                 action: {
+                    e: {
+                        connect: 'gen-place',
+                        main: 'gen-guild--green',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    d: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
                     c: {
                         connect: 'gen-place',
                         main: 'gen-guild--green',
@@ -4499,7 +4957,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.06,
+                weight: 0.08,
             },
             {
                 action: {
@@ -4641,7 +5099,7 @@ const myActionDatabase = {
             },
             {
                 action: {},
-                weight: 1.0,
+                weight: 2.0,
             },
         ],
         '3': [
@@ -4660,41 +5118,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.11,
-            },
-            {
-                action: {
-                    b: {
-                        connect: 'gen-place',
-                        main: 'gen-guild--purple',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-influence',
-                        'mod-1': 'gen-influence',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.11,
-            },
-            {
-                action: {
-                    b: {
-                        connect: 'gen-execute',
-                        main: 'gen-influence',
-                        'mod-1': 'gen-discard',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-guild--purple',
-                        'mod-1': 'gen-here',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.11,
+                weight: 0.33,
             },
             {
                 action: {
@@ -4711,41 +5135,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.11,
-            },
-            {
-                action: {
-                    b: {
-                        connect: 'gen-place',
-                        main: 'gen-guild--orange',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-influence',
-                        'mod-1': 'gen-influence',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.11,
-            },
-            {
-                action: {
-                    b: {
-                        connect: 'gen-execute',
-                        main: 'gen-influence',
-                        'mod-1': 'gen-discard',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-guild--orange',
-                        'mod-1': 'gen-here',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.11,
+                weight: 0.33,
             },
             {
                 action: {
@@ -4762,20 +5152,122 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.11,
+                weight: 0.33,
             },
             {
                 action: {
                     b: {
                         connect: 'gen-place',
-                        main: 'gen-guild--green',
-                        'mod-1': '',
-                        'mod-2': '',
+                        main: 'gen-card--brown',
+                        'mod-1': 'sost-travel',
+                        'mod-2': 'gen-ttl',
                     },
                     a: {
                         connect: '',
                         main: 'gen-influence',
-                        'mod-1': 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.17,
+            },
+            {
+                action: {
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-card--brown',
+                        'mod-1': 'sost-travel',
+                        'mod-2': 'gen-ttm',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.17,
+            },
+            {
+                action: {
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-card--brown',
+                        'mod-1': 'sost-travel',
+                        'mod-2': 'gen-ttr',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.17,
+            },
+            {
+                action: {
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-card--brown',
+                        'mod-1': 'sost-travel',
+                        'mod-2': 'gen-tbl',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.17,
+            },
+            {
+                action: {
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-card--brown',
+                        'mod-1': 'sost-travel',
+                        'mod-2': 'gen-tbm',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.17,
+            },
+            {
+                action: {
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-card--brown',
+                        'mod-1': 'sost-travel',
+                        'mod-2': 'gen-tbr',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.17,
+            },
+            {
+                action: {
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-card--brown',
+                        'mod-1': 'sost-translate',
+                        'mod-2': 'gen-ttl',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
                         'mod-2': '',
                     },
                 },
@@ -4784,15 +5276,134 @@ const myActionDatabase = {
             {
                 action: {
                     b: {
-                        connect: 'gen-execute',
-                        main: 'gen-influence',
-                        'mod-1': 'gen-discard',
-                        'mod-2': '',
+                        connect: 'gen-place',
+                        main: 'gen-card--brown',
+                        'mod-1': 'sost-translate',
+                        'mod-2': 'gen-ttm',
                     },
                     a: {
                         connect: '',
-                        main: 'gen-guild--green',
-                        'mod-1': 'gen-here',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.11,
+            },
+            {
+                action: {
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-card--brown',
+                        'mod-1': 'sost-translate',
+                        'mod-2': 'gen-ttr',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.11,
+            },
+            {
+                action: {
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-card--brown',
+                        'mod-1': 'sost-translate',
+                        'mod-2': 'gen-tml',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.11,
+            },
+            {
+                action: {
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-card--brown',
+                        'mod-1': 'sost-translate',
+                        'mod-2': 'gen-tmm',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.11,
+            },
+            {
+                action: {
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-card--brown',
+                        'mod-1': 'sost-translate',
+                        'mod-2': 'gen-tmr',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.11,
+            },
+            {
+                action: {
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-card--brown',
+                        'mod-1': 'sost-translate',
+                        'mod-2': 'gen-tbl',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.11,
+            },
+            {
+                action: {
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-card--brown',
+                        'mod-1': 'sost-translate',
+                        'mod-2': 'gen-tbm',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.11,
+            },
+            {
+                action: {
+                    b: {
+                        connect: 'gen-place',
+                        main: 'gen-card--brown',
+                        'mod-1': 'sost-translate',
+                        'mod-2': 'gen-tbr',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-influence',
+                        'mod-1': '',
                         'mod-2': '',
                     },
                 },
@@ -4800,7 +5411,7 @@ const myActionDatabase = {
             },
             {
                 action: {},
-                weight: 1.0,
+                weight: 6.0,
             },
         ],
     },
@@ -4811,7 +5422,7 @@ const myActionDatabase = {
                     b: {
                         connect: '',
                         main: 'gen-execute',
-                        'mod-1': 'iost-workshop',
+                        'mod-1': 'iost-workshop-tile',
                         'mod-2': 'gen-discard',
                     },
                     a: {
@@ -4828,7 +5439,7 @@ const myActionDatabase = {
                     b: {
                         connect: '',
                         main: 'gen-execute',
-                        'mod-1': 'iost-workshop',
+                        'mod-1': 'iost-workshop-tile',
                         'mod-2': 'gen-discard',
                     },
                     a: {
@@ -5601,180 +6212,7 @@ const myActionDatabase = {
             },
             {
                 action: {},
-                weight: 6.0,
-            },
-        ],
-        '3': [
-            {
-                action: {
-                    b: {
-                        connect: 'gen-place',
-                        main: 'gen-guild--blue',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-influence',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.11,
-            },
-            {
-                action: {
-                    b: {
-                        connect: 'gen-place',
-                        main: 'gen-guild--orange',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-influence',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.11,
-            },
-            {
-                action: {
-                    b: {
-                        connect: 'gen-place',
-                        main: 'gen-guild--black',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-influence',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.11,
-            },
-            {
-                action: {
-                    b: {
-                        connect: 'gen-execute',
-                        main: 'gen-influence',
-                        'mod-1': 'gen-discard',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-guild--blue',
-                        'mod-1': 'gen-here',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.11,
-            },
-            {
-                action: {
-                    b: {
-                        connect: 'gen-execute',
-                        main: 'gen-influence',
-                        'mod-1': 'gen-discard',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-guild--orange',
-                        'mod-1': 'gen-here',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.11,
-            },
-            {
-                action: {
-                    b: {
-                        connect: 'gen-execute',
-                        main: 'gen-influence',
-                        'mod-1': 'gen-discard',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-guild--black',
-                        'mod-1': 'gen-here',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.11,
-            },
-            {
-                action: {
-                    c: {
-                        connect: 'gen-and',
-                        main: 'gen-influence',
-                        'mod-1': 'gen-discard',
-                        'mod-2': '',
-                    },
-                    b: {
-                        connect: 'gen-execute',
-                        main: 'gen-influence',
-                        'mod-1': 'gen-discard',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-guild--blue',
-                        'mod-1': 'gen-here',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.11,
-            },
-            {
-                action: {
-                    c: {
-                        connect: 'gen-and',
-                        main: 'gen-influence',
-                        'mod-1': 'gen-discard',
-                        'mod-2': '',
-                    },
-                    b: {
-                        connect: 'gen-execute',
-                        main: 'gen-influence',
-                        'mod-1': 'gen-discard',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-guild--orange',
-                        'mod-1': 'gen-here',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.11,
-            },
-            {
-                action: {
-                    c: {
-                        connect: 'gen-and',
-                        main: 'gen-influence',
-                        'mod-1': 'gen-discard',
-                        'mod-2': '',
-                    },
-                    b: {
-                        connect: 'gen-execute',
-                        main: 'gen-influence',
-                        'mod-1': 'gen-discard',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-guild--black',
-                        'mod-1': 'gen-here',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.11,
+                weight: 2.0,
             },
         ],
     },
