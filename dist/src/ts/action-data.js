@@ -112,22 +112,16 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    c: {
+                    b: {
                         connect: 'gen-place',
                         main: 'gen-gold',
                         'mod-1': 'gen-space--worker',
                         'mod-2': '',
                     },
-                    b: {
-                        connect: 'gen-and',
-                        main: 'gen-worker',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     a: {
                         connect: '',
                         main: 'gen-worker',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                 },
@@ -135,22 +129,16 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    c: {
+                    b: {
                         connect: 'gen-place',
                         main: 'gen-stone',
                         'mod-1': 'gen-space--worker',
                         'mod-2': '',
                     },
-                    b: {
-                        connect: 'gen-and',
-                        main: 'gen-worker',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     a: {
                         connect: '',
                         main: 'gen-worker',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                 },
@@ -158,22 +146,16 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    c: {
+                    b: {
                         connect: 'gen-place',
                         main: 'gen-coin',
                         'mod-1': 'gen-space--worker',
                         'mod-2': '',
                     },
-                    b: {
-                        connect: 'gen-and',
-                        main: 'gen-worker',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     a: {
                         connect: '',
                         main: 'gen-worker',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                 },
@@ -181,22 +163,16 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    c: {
+                    b: {
                         connect: 'gen-place',
                         main: 'gen-wood',
                         'mod-1': 'gen-space--worker',
                         'mod-2': '',
                     },
-                    b: {
-                        connect: 'gen-and',
-                        main: 'gen-worker',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     a: {
                         connect: '',
                         main: 'gen-worker',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                 },
@@ -204,28 +180,16 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
+                    b: {
                         connect: 'gen-place',
                         main: 'gen-gold',
                         'mod-1': 'gen-space--worker',
                         'mod-2': '',
                     },
-                    c: {
-                        connect: 'gen-and',
-                        main: 'gen-worker',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    b: {
-                        connect: 'gen-and',
-                        main: 'gen-worker',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     a: {
                         connect: '',
                         main: 'gen-worker',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                 },
@@ -233,28 +197,16 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
+                    b: {
                         connect: 'gen-place',
                         main: 'gen-stone',
                         'mod-1': 'gen-space--worker',
                         'mod-2': '',
                     },
-                    c: {
-                        connect: 'gen-and',
-                        main: 'gen-worker',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    b: {
-                        connect: 'gen-and',
-                        main: 'gen-worker',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     a: {
                         connect: '',
                         main: 'gen-worker',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                 },
@@ -262,28 +214,16 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
+                    b: {
                         connect: 'gen-place',
                         main: 'gen-coin',
                         'mod-1': 'gen-space--worker',
                         'mod-2': '',
                     },
-                    c: {
-                        connect: 'gen-and',
-                        main: 'gen-worker',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    b: {
-                        connect: 'gen-and',
-                        main: 'gen-worker',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     a: {
                         connect: '',
                         main: 'gen-worker',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                 },
@@ -291,28 +231,16 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
+                    b: {
                         connect: 'gen-place',
                         main: 'gen-wood',
                         'mod-1': 'gen-space--worker',
                         'mod-2': '',
                     },
-                    c: {
-                        connect: 'gen-and',
-                        main: 'gen-worker',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    b: {
-                        connect: 'gen-and',
-                        main: 'gen-worker',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     a: {
                         connect: '',
                         main: 'gen-worker',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                 },
@@ -742,16 +670,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    b: {
-                        connect: 'gen-and',
-                        main: 'gen-tax',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     a: {
                         connect: '',
                         main: 'gen-tax',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                 },
@@ -759,22 +681,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    c: {
-                        connect: 'gen-and',
-                        main: 'gen-tax',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    b: {
-                        connect: 'gen-and',
-                        main: 'gen-tax',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     a: {
                         connect: '',
                         main: 'gen-tax',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                 },
@@ -1290,17 +1200,11 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    b: {
-                        connect: 'gen-and',
-                        main: 'gen-tax',
-                        'mod-1': 'gen-discard',
-                        'mod-2': '',
-                    },
                     a: {
                         connect: '',
                         main: 'gen-tax',
                         'mod-1': 'gen-discard',
-                        'mod-2': '',
+                        'mod-2': 'gen-02',
                     },
                 },
                 weight: 0.5,
@@ -1324,23 +1228,17 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    c: {
+                    b: {
                         connect: 'gen-execute',
                         main: 'gen-tax',
                         'mod-1': 'gen-discard',
                         'mod-2': 'gen-var',
                     },
-                    b: {
-                        connect: 'gen-and',
-                        main: 'gen-card--purple',
-                        'mod-1': 'gen-gain',
-                        'mod-2': '',
-                    },
                     a: {
                         connect: '',
                         main: 'gen-card--purple',
                         'mod-1': 'gen-gain',
-                        'mod-2': '',
+                        'mod-2': 'gen-02',
                     },
                 },
                 weight: 0.33,
@@ -1483,12 +1381,6 @@ const myActionDatabase = {
         '2': [
             {
                 action: {
-                    e: {
-                        connect: 'gen-inherit',
-                        main: 'gen-player',
-                        'mod-1': 'gen-max',
-                        'mod-2': 'vowk-nobility',
-                    },
                     d: {
                         connect: 'gen-place',
                         main: 'vowk-guildh',
@@ -1498,7 +1390,7 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-execute',
                         main: 'gen-worker',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -1514,16 +1406,10 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.1,
+                weight: 0.05,
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-inherit',
-                        main: 'gen-player',
-                        'mod-1': 'gen-max',
-                        'mod-2': 'vowk-nobility',
-                    },
                     d: {
                         connect: 'gen-place',
                         main: 'vowk-guildh',
@@ -1533,7 +1419,7 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-execute',
                         main: 'gen-worker',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -1549,16 +1435,10 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.1,
+                weight: 0.05,
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-inherit',
-                        main: 'gen-player',
-                        'mod-1': 'gen-max',
-                        'mod-2': 'vowk-nobility',
-                    },
                     d: {
                         connect: 'gen-place',
                         main: 'vowk-guildh',
@@ -1568,7 +1448,7 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-execute',
                         main: 'gen-worker',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -1584,16 +1464,10 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.1,
+                weight: 0.05,
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-inherit',
-                        main: 'gen-player',
-                        'mod-1': 'gen-max',
-                        'mod-2': 'vowk-nobility',
-                    },
                     d: {
                         connect: 'gen-place',
                         main: 'vowk-guildh',
@@ -1603,7 +1477,7 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-execute',
                         main: 'gen-worker',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -1619,16 +1493,10 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.1,
+                weight: 0.05,
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-inherit',
-                        main: 'gen-player',
-                        'mod-1': 'gen-max',
-                        'mod-2': 'vowk-nobility',
-                    },
                     d: {
                         connect: 'gen-place',
                         main: 'vowk-guildh',
@@ -1638,7 +1506,7 @@ const myActionDatabase = {
                     c: {
                         connect: 'gen-execute',
                         main: 'gen-worker',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -1654,7 +1522,297 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.1,
+                weight: 0.05,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-place',
+                        main: 'vowk-guildh',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-execute',
+                        main: 'gen-worker',
+                        'mod-1': 'gen-03',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-between',
+                        main: 'gen-02',
+                        'mod-1': 'gen-here',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-01',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.06,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-place',
+                        main: 'vowk-guildh',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-execute',
+                        main: 'gen-worker',
+                        'mod-1': 'gen-03',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-between',
+                        main: 'gen-04',
+                        'mod-1': 'gen-here',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-03',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.06,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-place',
+                        main: 'vowk-guildh',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-execute',
+                        main: 'gen-worker',
+                        'mod-1': 'gen-03',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-between',
+                        main: 'gen-06',
+                        'mod-1': 'gen-here',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-05',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.06,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-place',
+                        main: 'vowk-guildh',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-execute',
+                        main: 'gen-worker',
+                        'mod-1': 'gen-03',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-between',
+                        main: 'gen-08',
+                        'mod-1': 'gen-here',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-07',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.06,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-place',
+                        main: 'vowk-guildh',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-execute',
+                        main: 'gen-worker',
+                        'mod-1': 'gen-03',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-between',
+                        main: 'gen-10',
+                        'mod-1': 'gen-here',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-09',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.06,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-place',
+                        main: 'vowk-guildh',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-execute',
+                        main: 'gen-worker',
+                        'mod-1': 'gen-04',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-between',
+                        main: 'gen-02',
+                        'mod-1': 'gen-here',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-01',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.04,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-place',
+                        main: 'vowk-guildh',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-execute',
+                        main: 'gen-worker',
+                        'mod-1': 'gen-04',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-between',
+                        main: 'gen-04',
+                        'mod-1': 'gen-here',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-03',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.04,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-place',
+                        main: 'vowk-guildh',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-execute',
+                        main: 'gen-worker',
+                        'mod-1': 'gen-04',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-between',
+                        main: 'gen-06',
+                        'mod-1': 'gen-here',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-05',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.04,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-place',
+                        main: 'vowk-guildh',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-execute',
+                        main: 'gen-worker',
+                        'mod-1': 'gen-04',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-between',
+                        main: 'gen-08',
+                        'mod-1': 'gen-here',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-07',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.04,
+            },
+            {
+                action: {
+                    d: {
+                        connect: 'gen-place',
+                        main: 'vowk-guildh',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                    c: {
+                        connect: 'gen-execute',
+                        main: 'gen-worker',
+                        'mod-1': 'gen-04',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-between',
+                        main: 'gen-10',
+                        'mod-1': 'gen-here',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-09',
+                        'mod-1': '',
+                        'mod-2': '',
+                    },
+                },
+                weight: 0.04,
             },
             {
                 action: {
@@ -1671,7 +1829,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.1,
+                weight: 0.05,
             },
             {
                 action: {
@@ -1688,7 +1846,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.1,
+                weight: 0.05,
             },
             {
                 action: {
@@ -1705,7 +1863,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.1,
+                weight: 0.05,
             },
             {
                 action: {
@@ -1722,7 +1880,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.1,
+                weight: 0.05,
             },
             {
                 action: {
@@ -1739,7 +1897,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.1,
+                weight: 0.05,
             },
             {
                 action: {
@@ -2203,74 +2361,92 @@ const myActionDatabase = {
             },
             {
                 action: {},
-                weight: 4.5,
+                weight: 3.5,
             },
         ],
         '3': [
             {
                 action: {
-                    c: {
+                    e: {
                         connect: 'gen-then',
                         main: 'gen-card--black',
                         'mod-1': 'gen-gain',
                         'mod-2': '',
                     },
-                    b: {
+                    d: {
                         connect: 'gen-if',
                         main: 'vowk-criminal',
                         'mod-1': 'gen-01-plus',
                         'mod-2': '',
                     },
-                    a: {
+                    c: {
                         connect: '',
                         main: 'gen-player--all',
                         'mod-1': 'gen-execute',
                         'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--red',
+                        'mod-1': 'gen-gain',
+                        'mod-2': 'gen-03',
                     },
                 },
                 weight: 0.04,
             },
             {
                 action: {
-                    c: {
+                    e: {
                         connect: 'gen-then',
                         main: 'vowk-corruption-move',
                         'mod-1': '',
                         'mod-2': '',
                     },
-                    b: {
+                    d: {
                         connect: 'gen-if',
                         main: 'vowk-criminal',
                         'mod-1': 'gen-01-plus',
                         'mod-2': '',
                     },
-                    a: {
+                    c: {
                         connect: '',
                         main: 'gen-player--all',
                         'mod-1': 'gen-execute',
                         'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--red',
+                        'mod-1': 'gen-gain',
+                        'mod-2': 'gen-02',
                     },
                 },
                 weight: 0.07,
             },
             {
                 action: {
-                    c: {
+                    e: {
                         connect: 'gen-then',
                         main: 'vowk-corruption-move',
                         'mod-1': '',
                         'mod-2': '',
                     },
-                    b: {
+                    d: {
                         connect: 'gen-if',
                         main: 'vowk-criminal',
                         'mod-1': 'gen-01-plus',
                         'mod-2': '',
                     },
-                    a: {
+                    c: {
                         connect: '',
                         main: 'gen-player--all',
                         'mod-1': 'gen-execute',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--red',
+                        'mod-1': 'gen-gain',
                         'mod-2': '',
                     },
                 },
@@ -2278,16 +2454,28 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    b: {
+                    d: {
                         connect: 'gen-if',
                         main: 'vowk-rearrange',
                         'mod-1': '',
                         'mod-2': '',
                     },
-                    a: {
+                    c: {
                         connect: '',
                         main: 'gen-player--all',
                         'mod-1': 'gen-execute',
+                        'mod-2': '',
+                    },
+                    b: {
+                        connect: 'gen-and',
+                        main: 'gen-card--red',
+                        'mod-1': 'gen-gain',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--black',
+                        'mod-1': 'gen-gain',
                         'mod-2': '',
                     },
                 },
@@ -2295,22 +2483,28 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    c: {
+                    e: {
                         connect: 'gen-then',
                         main: 'vowk-virtue-move',
                         'mod-1': '',
                         'mod-2': '',
                     },
-                    b: {
+                    d: {
                         connect: 'gen-if',
                         main: 'vowk-criminal',
                         'mod-1': 'gen-0',
                         'mod-2': '',
                     },
-                    a: {
+                    c: {
                         connect: '',
                         main: 'gen-player--all',
                         'mod-1': 'gen-execute',
+                        'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--black',
+                        'mod-1': 'gen-gain',
                         'mod-2': '',
                     },
                 },
@@ -2318,46 +2512,58 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    c: {
+                    e: {
                         connect: 'gen-then',
                         main: 'vowk-virtue-move',
                         'mod-1': '',
                         'mod-2': '',
                     },
-                    b: {
+                    d: {
                         connect: 'gen-if',
                         main: 'vowk-criminal',
                         'mod-1': 'gen-0',
                         'mod-2': '',
                     },
-                    a: {
+                    c: {
                         connect: '',
                         main: 'gen-player--all',
                         'mod-1': 'gen-execute',
                         'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--black',
+                        'mod-1': 'gen-gain',
+                        'mod-2': 'gen-02',
                     },
                 },
                 weight: 0.07,
             },
             {
                 action: {
-                    c: {
+                    e: {
                         connect: 'gen-then',
                         main: 'gen-card--red',
                         'mod-1': 'gen-gain',
                         'mod-2': '',
                     },
-                    b: {
+                    d: {
                         connect: 'gen-if',
                         main: 'vowk-criminal',
                         'mod-1': 'gen-0',
                         'mod-2': '',
                     },
-                    a: {
+                    c: {
                         connect: '',
                         main: 'gen-player--all',
                         'mod-1': 'gen-execute',
                         'mod-2': '',
+                    },
+                    a: {
+                        connect: '',
+                        main: 'gen-card--black',
+                        'mod-1': 'gen-gain',
+                        'mod-2': 'gen-03',
                     },
                 },
                 weight: 0.04,
@@ -2371,29 +2577,12 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.2,
+                weight: 0.33,
             },
             {
                 action: {
                     b: {
-                        connect: '',
-                        main: 'gen-card--red',
-                        'mod-1': 'gen-gain',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--red',
-                        'mod-1': 'gen-gain',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.2,
-            },
-            {
-                action: {
-                    b: {
-                        connect: '',
+                        connect: 'gen-and',
                         main: 'gen-card--red',
                         'mod-1': 'gen-gain',
                         'mod-2': '',
@@ -2405,7 +2594,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.2,
+                weight: 0.33,
             },
             {
                 action: {
@@ -2416,28 +2605,11 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.2,
-            },
-            {
-                action: {
-                    b: {
-                        connect: '',
-                        main: 'gen-card--black',
-                        'mod-1': 'gen-gain',
-                        'mod-2': '',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-card--black',
-                        'mod-1': 'gen-gain',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.2,
+                weight: 0.33,
             },
             {
                 action: {},
-                weight: 10.0,
+                weight: 8.0,
             },
         ],
     },
@@ -2665,7 +2837,7 @@ const myActionDatabase = {
             },
             {
                 action: {},
-                weight: 5.5,
+                weight: 1.5,
             },
             {
                 action: {
@@ -2682,7 +2854,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 1.0,
+                weight: 0.75,
             },
             {
                 action: {
@@ -2699,7 +2871,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 1.0,
+                weight: 0.75,
             },
         ],
         '3': [
@@ -2959,16 +3131,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -2988,22 +3154,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                     b: {
@@ -3046,16 +3200,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -3075,22 +3223,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                     b: {
@@ -3144,16 +3280,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -3173,22 +3303,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                     b: {
@@ -3231,16 +3349,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -3260,22 +3372,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                     b: {
@@ -3329,16 +3429,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -3358,22 +3452,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                     b: {
@@ -3416,16 +3498,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -3445,22 +3521,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                     b: {
@@ -3514,16 +3578,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -3543,22 +3601,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                     b: {
@@ -3601,16 +3647,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -3630,22 +3670,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                     b: {
@@ -3699,16 +3727,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -3728,22 +3750,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                     b: {
@@ -3786,16 +3796,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -3815,22 +3819,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                     b: {
@@ -3884,16 +3876,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -3913,22 +3899,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                     b: {
@@ -3971,16 +3945,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -4000,22 +3968,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                     b: {
@@ -4069,16 +4025,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -4098,22 +4048,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                     b: {
@@ -4156,16 +4094,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -4185,22 +4117,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                     b: {
@@ -4254,16 +4174,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -4283,22 +4197,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                     b: {
@@ -4341,16 +4243,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-02',
                         'mod-2': '',
                     },
                     b: {
@@ -4370,22 +4266,10 @@ const myActionDatabase = {
             },
             {
                 action: {
-                    e: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                    d: {
-                        connect: 'gen-and',
-                        main: 'gen-gold',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
                     c: {
                         connect: 'gen-has',
                         main: 'gen-gold',
-                        'mod-1': '',
+                        'mod-1': 'gen-03',
                         'mod-2': '',
                     },
                     b: {

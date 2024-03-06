@@ -7,4 +7,6 @@ function draw() {
         const codedAction = weightedRandom(actionTables[key]);
         actionBox.appendChild(decodeAction(codedAction));
     }
+    const textBox = document.getElementById('setup-text');
+    textBox.innerHTML = (Math.round(seededRandom() * 100) / 100).toString();
 }
