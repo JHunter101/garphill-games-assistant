@@ -1,6 +1,6 @@
 const myActionDatabase: actionDatabase = {
   'West Kingdom, Architects of the': {
-    '2': [
+    '1': [
       {
         action: {
           c: {
@@ -2664,10 +2664,84 @@ const myActionDatabase: actionDatabase = {
       },
       {
         action: {},
-        weight: 7.0,
+        weight: 5.5,
+      },
+      {
+        action: {
+          b: {
+            connect: 'gen-else',
+            main: 'sost-translate',
+            'mod-1': 'gen-tbm',
+            'mod-2': '',
+          },
+          a: {
+            connect: '',
+            main: 'sost-translate',
+            'mod-1': 'gen-ttm',
+            'mod-2': '',
+          },
+        },
+        weight: 1.0,
+      },
+      {
+        action: {
+          b: {
+            connect: 'gen-else',
+            main: 'sost-translate',
+            'mod-1': 'gen-ttm',
+            'mod-2': '',
+          },
+          a: {
+            connect: '',
+            main: 'sost-translate',
+            'mod-1': 'gen-tbm',
+            'mod-2': '',
+          },
+        },
+        weight: 1.0,
       },
     ],
     '3': [
+      {
+        action: {
+          b: {
+            connect: 'gen-else',
+            main: 'sost-translate',
+            'mod-1': 'gen-tbm',
+            'mod-2': '',
+          },
+          a: {
+            connect: '',
+            main: 'sost-translate',
+            'mod-1': 'gen-ttm',
+            'mod-2': '',
+          },
+        },
+        weight: 0.5,
+      },
+      {
+        action: {
+          b: {
+            connect: 'gen-else',
+            main: 'sost-translate',
+            'mod-1': 'gen-ttm',
+            'mod-2': '',
+          },
+          a: {
+            connect: '',
+            main: 'sost-translate',
+            'mod-1': 'gen-tbm',
+            'mod-2': '',
+          },
+        },
+        weight: 0.5,
+      },
+      {
+        action: {},
+        weight: 9.0,
+      },
+    ],
+    '4': [
       {
         action: {
           d: {
@@ -2727,7 +2801,7 @@ const myActionDatabase: actionDatabase = {
         weight: 1.0,
       },
     ],
-    '4': [
+    '5': [
       {
         action: {
           d: {
@@ -5431,7 +5505,7 @@ const myActionDatabase: actionDatabase = {
             'mod-2': 'gen-here',
           },
         },
-        weight: 0.25,
+        weight: 0.5,
       },
       {
         action: {
@@ -5448,7 +5522,7 @@ const myActionDatabase: actionDatabase = {
             'mod-2': 'gen-here',
           },
         },
-        weight: 0.25,
+        weight: 0.5,
       },
       {
         action: {
@@ -5563,7 +5637,7 @@ const myActionDatabase: actionDatabase = {
             'mod-2': 'gen-01',
           },
         },
-        weight: 0.13,
+        weight: 0.25,
       },
       {
         action: {
@@ -5586,7 +5660,7 @@ const myActionDatabase: actionDatabase = {
             'mod-2': 'gen-02',
           },
         },
-        weight: 0.19,
+        weight: 0.38,
       },
       {
         action: {
@@ -5609,7 +5683,7 @@ const myActionDatabase: actionDatabase = {
             'mod-2': 'gen-03',
           },
         },
-        weight: 0.31,
+        weight: 0.63,
       },
       {
         action: {
@@ -5632,7 +5706,7 @@ const myActionDatabase: actionDatabase = {
             'mod-2': 'gen-04',
           },
         },
-        weight: 0.38,
+        weight: 0.75,
       },
       {
         action: {
@@ -6211,7 +6285,7 @@ const myActionDatabase: actionDatabase = {
       },
       {
         action: {},
-        weight: 2.0,
+        weight: 3.0,
       },
     ],
   },
