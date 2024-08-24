@@ -1,3 +1,4 @@
+// Given a list of items, return a random item from the list
 function randItem(myList: any[]): any {
   if (myList.length === 0) {
     return '';
@@ -6,6 +7,7 @@ function randItem(myList: any[]): any {
   return value;
 }
 
+// Given a list of items, shuffle the list and return the list
 function shuffleList(myList: any[]): any[] {
   for (let i = myList.length - 1; i > 0; i--) {
     const j = randItem([...Array(i + 1).keys()]);
@@ -14,6 +16,7 @@ function shuffleList(myList: any[]): any[] {
   return myList;
 }
 
+// Given a list of items, return {amount} unique items from the list
 function randUniqueItems(myList: any[], amount: number): any[] {
   myList = shuffleList(myList);
 
@@ -25,11 +28,7 @@ function randUniqueItems(myList: any[], amount: number): any[] {
   return myList;
 }
 
-function weightedRandom(tableData: { [key: number]: any }) {
-  const i = Math.floor(seededRandom() * Object.keys(tableData).length);
-  return tableData[i];
-}
-
+// Given a list of ditionaries where each dictionary has a 'weight' property return a look up table from 0 to slices (scd) that points to one of the dictonaries based on the 'weight' property
 function weightedRandomTable(myList: { weight: number }[]) {
   const slices = smallestCommonDenominator(myList.map((x) => x.weight));
   const table: any = {};
@@ -43,7 +42,12 @@ function weightedRandomTable(myList: { weight: number }[]) {
     }
   }
 
-  console.log(Object.keys(table).length);
-
   return table;
+}
+
+// Given a look up table created by weightedRandomTable return a random item from the table
+
+function weightedRandom(tableData: { [key: number]: any }) {
+  const i = Math.floor(seededRandom() * Object.keys(tableData).length);
+  return tableData[i];
 }

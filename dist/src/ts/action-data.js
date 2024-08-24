@@ -1,7 +1,7 @@
 "use strict";
 const myActionDatabase = {
     'West Kingdom, Architects of the': {
-        '1': [
+        '2': [
             {
                 action: {
                     c: {
@@ -1084,7 +1084,7 @@ const myActionDatabase = {
                         connect: '',
                         main: 'powk-card--wall',
                         'mod-1': 'gen-discard',
-                        'mod-2': 'gen-max',
+                        'mod-2': '',
                     },
                 },
                 weight: 1.0,
@@ -2609,7 +2609,7 @@ const myActionDatabase = {
             },
             {
                 action: {},
-                weight: 8.0,
+                weight: 6.0,
             },
         ],
     },
@@ -2837,7 +2837,7 @@ const myActionDatabase = {
             },
             {
                 action: {},
-                weight: 1.5,
+                weight: 1.75,
             },
             {
                 action: {
@@ -2854,7 +2854,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.75,
+                weight: 0.38,
             },
             {
                 action: {
@@ -2871,10 +2871,10 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.75,
+                weight: 0.38,
             },
         ],
-        '3': [
+        '1': [
             {
                 action: {
                     b: {
@@ -2914,7 +2914,7 @@ const myActionDatabase = {
                 weight: 9.0,
             },
         ],
-        '4': [
+        '3': [
             {
                 action: {
                     d: {
@@ -2937,7 +2937,7 @@ const myActionDatabase = {
                     },
                     a: {
                         connect: 'gen-if',
-                        main: 'gen-card',
+                        main: 'gen-card--grey',
                         'mod-1': 'gen-discard',
                         'mod-2': '',
                     },
@@ -2966,7 +2966,7 @@ const myActionDatabase = {
                     },
                     a: {
                         connect: 'gen-if',
-                        main: 'gen-card',
+                        main: 'gen-card--grey',
                         'mod-1': 'gen-discard',
                         'mod-2': '',
                     },
@@ -2974,7 +2974,7 @@ const myActionDatabase = {
                 weight: 1.0,
             },
         ],
-        '5': [
+        '4': [
             {
                 action: {
                     d: {
@@ -2997,7 +2997,7 @@ const myActionDatabase = {
                     },
                     a: {
                         connect: 'gen-if',
-                        main: 'gen-card',
+                        main: 'gen-card--grey',
                         'mod-1': 'gen-discard',
                         'mod-2': '',
                     },
@@ -3026,7 +3026,7 @@ const myActionDatabase = {
                     },
                     a: {
                         connect: 'gen-if',
-                        main: 'gen-card',
+                        main: 'gen-card--grey',
                         'mod-1': 'gen-discard',
                         'mod-2': '',
                     },
@@ -3055,7 +3055,7 @@ const myActionDatabase = {
                     },
                     a: {
                         connect: 'gen-if',
-                        main: 'gen-card',
+                        main: 'gen-card--grey',
                         'mod-1': 'gen-discard',
                         'mod-2': '',
                     },
@@ -3084,7 +3084,7 @@ const myActionDatabase = {
                     },
                     a: {
                         connect: 'gen-if',
-                        main: 'gen-card',
+                        main: 'gen-card--grey',
                         'mod-1': 'gen-discard',
                         'mod-2': '',
                     },
@@ -5229,7 +5229,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.11,
+                weight: 0.13,
             },
             {
                 action: {
@@ -5246,7 +5246,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.11,
+                weight: 0.13,
             },
             {
                 action: {
@@ -5263,7 +5263,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.11,
+                weight: 0.13,
             },
             {
                 action: {
@@ -5280,24 +5280,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.11,
-            },
-            {
-                action: {
-                    b: {
-                        connect: 'gen-place',
-                        main: 'gen-card--brown',
-                        'mod-1': 'sost-translate',
-                        'mod-2': 'gen-tmm',
-                    },
-                    a: {
-                        connect: '',
-                        main: 'gen-influence',
-                        'mod-1': '',
-                        'mod-2': '',
-                    },
-                },
-                weight: 0.11,
+                weight: 0.13,
             },
             {
                 action: {
@@ -5314,7 +5297,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.11,
+                weight: 0.13,
             },
             {
                 action: {
@@ -5331,7 +5314,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.11,
+                weight: 0.13,
             },
             {
                 action: {
@@ -5348,7 +5331,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.11,
+                weight: 0.13,
             },
             {
                 action: {
@@ -5365,7 +5348,7 @@ const myActionDatabase = {
                         'mod-2': '',
                     },
                 },
-                weight: 0.11,
+                weight: 0.13,
             },
             {
                 action: {},
@@ -5378,10 +5361,10 @@ const myActionDatabase = {
             {
                 action: {
                     b: {
-                        connect: '',
-                        main: 'gen-execute',
-                        'mod-1': 'iost-workshop-tile',
-                        'mod-2': 'gen-discard',
+                        connect: 'gen-execute',
+                        main: 'iost-workshop-tile',
+                        'mod-1': 'gen-discard',
+                        'mod-2': '',
                     },
                     a: {
                         connect: '',
@@ -5395,10 +5378,10 @@ const myActionDatabase = {
             {
                 action: {
                     b: {
-                        connect: '',
-                        main: 'gen-execute',
-                        'mod-1': 'iost-workshop-tile',
-                        'mod-2': 'gen-discard',
+                        connect: 'gen-execute',
+                        main: 'iost-workshop-tile',
+                        'mod-1': 'gen-discard',
+                        'mod-2': '',
                     },
                     a: {
                         connect: '',

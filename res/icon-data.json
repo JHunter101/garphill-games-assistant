@@ -45,7 +45,9 @@
         "class-parent": [
             "dm-green"
         ],
-        "class-self": []
+        "class-self": [
+            "main-shrunk"
+        ]
     },
     "gen-else": {
         "code": "gen-else",
@@ -93,7 +95,9 @@
         "class-parent": [
             "dm-yellow"
         ],
-        "class-self": []
+        "class-self": [
+            "main-shrunk"
+        ]
     },
     "gen-inherit": {
         "code": "gen-inherit",
@@ -421,7 +425,9 @@
         "attachWhere": "solid",
         "color": "none",
         "class-parent": [],
-        "class-self": []
+        "class-self": [
+            "main-shrunk"
+        ]
     },
     "gen-has": {
         "code": "gen-has",
@@ -491,11 +497,30 @@
             "overlay",
             "overlay-hm",
             "overlay-vb",
-            "overlay-behind"
+            "overlay-behind",
+            "overlay-enlarge-plus"
         ]
     },
     "gen-card": {
         "code": "gen-card",
+        "type": "object",
+        "name": "",
+        "desc": "",
+        "draw": true,
+        "end": true,
+        "stack": false,
+        "attachType": "solid",
+        "attachWhere": "solid",
+        "color": "none",
+        "class-parent": [],
+        "class-self": [
+            "overlay",
+            "overlay-hm",
+            "overlay-vm"
+        ]
+    },
+    "gen-card--grey": {
+        "code": "gen-card--grey",
         "type": "object",
         "name": "",
         "desc": "",
@@ -744,7 +769,7 @@
             "overlay",
             "overlay-hm",
             "overlay-vm",
-            "overlay-tiny"
+            "overlay-shrunk"
         ]
     },
     "gen-topmost": {
@@ -798,8 +823,7 @@
         "class-self": [
             "overlay",
             "overlay-hm",
-            "overlay-vt",
-            "overlay-shrunk"
+            "overlay-vt"
         ]
     },
     "gen-ttl": {
@@ -1106,7 +1130,7 @@
             "overlay",
             "overlay-hm",
             "overlay-vm",
-            "overlay-tiny"
+            "overlay-shrunk"
         ]
     },
     "aowk-build": {
@@ -1871,25 +1895,6 @@
     "aowk-workergroup--singlecolor": {
         "code": "aowk-workergroup--singlecolor",
         "type": "target-if",
-        "name": "",
-        "desc": "",
-        "draw": true,
-        "end": true,
-        "stack": false,
-        "attachType": "",
-        "attachWhere": "solid",
-        "color": "",
-        "class-parent": [],
-        "class-self": [
-            "overlay",
-            "overlay-hm",
-            "overlay-vm",
-            "overlay-shrunk"
-        ]
-    },
-    "gen-card--bown": {
-        "code": "gen-card--bown",
-        "type": "",
         "name": "",
         "desc": "",
         "draw": true,

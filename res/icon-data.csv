@@ -1,10 +1,10 @@
 image,code,type,name,desc,draw,end,stack,attachType,attachWhere,color,class-parent,class-self
 ,gen-if,connect,If,,FALSE,TRUE,FALSE,solid,solid,blue,dm-blue,
 ,gen-remind,connect,Warning: Reminder,,FALSE,TRUE,FALSE,solid,solid,blue,dm-blue,
-,gen-then,connect,Then,,FALSE,TRUE,FALSE,solid,solid,green,dm-green,
+,gen-then,connect,Then,,FALSE,TRUE,FALSE,solid,solid,green,dm-green,main-shrunk
 ,gen-else,connect,Else,,FALSE,TRUE,FALSE,solid,solid,red,dm-red,
 ,gen-force,connect,Warning: Mandatory,,FALSE,TRUE,FALSE,solid,solid,red,dm-red,
-,gen-here,color,,,FALSE,TRUE,FALSE,none,none,yellow,dm-yellow,
+,gen-here,color,,,FALSE,TRUE,FALSE,none,none,yellow,dm-yellow,main-shrunk
 ,gen-inherit,connect,Inherit,,TRUE,FALSE,FALSE,solid,solid,yellow,dm-yellow,
 ,gen-place,connect,Place,,TRUE,FALSE,TRUE,solid,solid,none,wrap-reverse,flex-100
 ,gen-bottommost,target-dir,Bottommost,,TRUE,TRUE,FALSE,hook,bottom,none,,"overlay,overlay-hm,overlay-vb"
@@ -23,12 +23,13 @@ image,code,type,name,desc,draw,end,stack,attachType,attachWhere,color,class-pare
 ,gen-rightmost,target-dir,Rightmost,,TRUE,TRUE,FALSE,hook,right,none,,"overlay,overlay-hr,overlay-vm"
 ,gen-tmr,target-dir,Right,,TRUE,TRUE,FALSE,hook,right,none,,"overlay,overlay-hr,overlay-vm"
 ,gen-between,connect,Between,,TRUE,FALSE,FALSE,solid,solid,none,,
-,gen-execute,connect,Execute,,TRUE,TRUE,FALSE,solid,solid,none,,
+,gen-execute,connect,Execute,,TRUE,TRUE,FALSE,solid,solid,none,,main-shrunk
 ,gen-has,connect,Has,,TRUE,FALSE,FALSE,solid,solid,none,,
 ,aowk-cath,location,,,TRUE,TRUE,FALSE,solid,solid,none,,"overlay,overlay-hm,overlay-vm"
 ,gen-space--square,location,,,TRUE,TRUE,FALSE,solid,solid,none,,"overlay,overlay-hm,overlay-vm,overlay-enlarge,overlay-behind"
-,gen-space--worker,location,,,TRUE,TRUE,FALSE,solid,solid,none,,"overlay,overlay-hm,overlay-vb,overlay-behind"
+,gen-space--worker,location,,,TRUE,TRUE,FALSE,solid,solid,none,,"overlay,overlay-hm,overlay-vb,overlay-behind,overlay-enlarge-plus"
 ,gen-card,object,,,TRUE,TRUE,FALSE,solid,solid,none,,"overlay,overlay-hm,overlay-vm"
+,gen-card--grey,object,,,TRUE,TRUE,FALSE,solid,solid,none,,"overlay,overlay-hm,overlay-vm"
 ,gen-card--black,object,,,TRUE,TRUE,FALSE,solid,solid,none,,"overlay,overlay-hm,overlay-vm"
 ,gen-card--blue,object,,,TRUE,TRUE,FALSE,solid,solid,none,,"overlay,overlay-hm,overlay-vm"
 ,gen-card--green,object,,,TRUE,TRUE,FALSE,solid,solid,none,,"overlay,overlay-hm,overlay-vm"
@@ -41,10 +42,10 @@ image,code,type,name,desc,draw,end,stack,attachType,attachWhere,color,class-pare
 ,gen-provision,object,,,TRUE,TRUE,FALSE,solid,solid,none,,"overlay,overlay-hm,overlay-vm"
 ,gen-tax,object,Tax,,TRUE,TRUE,FALSE,solid,solid,none,,"overlay,overlay-hm,overlay-vm"
 ,gen-worker,object,Worker,,TRUE,TRUE,FALSE,solid,solid,none,,"overlay,overlay-hm,overlay-vm"
-,gen-player,target-player,,,TRUE,TRUE,FALSE,solid,solid,none,,"overlay,overlay-hm,overlay-vm,overlay-tiny"
+,gen-player,target-player,,,TRUE,TRUE,FALSE,solid,solid,none,,"overlay,overlay-hm,overlay-vm,overlay-shrunk"
 ,gen-topmost,target-dir,Topmost,,TRUE,TRUE,FALSE,hook,top,none,,"overlay,overlay-hm,overlay-vt"
 ,gen-ttm,target-dir,Top,,TRUE,TRUE,FALSE,hook,top,none,,"overlay,overlay-hm,overlay-vt"
-,gen-max,target-num,Largest / Highest,,TRUE,TRUE,FALSE,hook,top,none,,"overlay,overlay-hm,overlay-vt,overlay-shrunk"
+,gen-max,target-num,Largest / Highest,,TRUE,TRUE,FALSE,hook,top,none,,"overlay,overlay-hm,overlay-vt"
 ,gen-ttl,target-dir,Top-Left,,TRUE,TRUE,FALSE,hook,top-left,none,,"overlay,overlay-hl,overlay-vt"
 ,gen-ttr,target-dir,Top-Right,,TRUE,TRUE,FALSE,hook,top-right,none,,"overlay,overlay-hr,overlay-vt"
 ,gen-01,target-num,1st,,TRUE,TRUE,FALSE,hook,top-right,none,,"overlay,overlay-hr,overlay-vt"
@@ -61,7 +62,7 @@ image,code,type,name,desc,draw,end,stack,attachType,attachWhere,color,class-pare
 ,aowk-capture,action,,,TRUE,TRUE,FALSE,,middle,,,"overlay,overlay-hm,overlay-vm"
 ,gen-instant,action,,,TRUE,TRUE,FALSE,,middle,,,"overlay,overlay-hm,overlay-vm"
 ,gen-ongoing,action,,,TRUE,TRUE,FALSE,,middle,,,"overlay,overlay-hm,overlay-vm"
-,gen-player--all,target-player,,,TRUE,TRUE,FALSE,,middle,,,"overlay,overlay-hm,overlay-vm,overlay-tiny"
+,gen-player--all,target-player,,,TRUE,TRUE,FALSE,,middle,,,"overlay,overlay-hm,overlay-vm,overlay-shrunk"
 ,aowk-build,,,,TRUE,TRUE,FALSE,,middle,,,"overlay,overlay-hm,overlay-vm"
 ,gen-worker--group,action,Release,,TRUE,TRUE,FALSE,,solid,,,"overlay,overlay-hm,overlay-vm,overlay-shrunk"
 ,iost-construct,action,,,TRUE,TRUE,FALSE,,solid,,,"overlay,overlay-hm,overlay-vm,overlay-shrunk"
@@ -103,7 +104,6 @@ image,code,type,name,desc,draw,end,stack,attachType,attachWhere,color,class-pare
 ,wost-card--insp,object,,,TRUE,TRUE,FALSE,,solid,,,"overlay,overlay-hm,overlay-vm,overlay-shrunk"
 ,aowk-workergroup--multicolor,target-if,,,TRUE,TRUE,FALSE,,solid,,,"overlay,overlay-hm,overlay-vm,overlay-shrunk"
 ,aowk-workergroup--singlecolor,target-if,,,TRUE,TRUE,FALSE,,solid,,,"overlay,overlay-hm,overlay-vm,overlay-shrunk"
-,gen-card--bown,,,,TRUE,TRUE,FALSE,,solid,,,"overlay,overlay-hm,overlay-vm,overlay-shrunk"
 ,gen-card--brown,,,,TRUE,TRUE,FALSE,,solid,,,"overlay,overlay-hm,overlay-vm,overlay-shrunk"
 ,gen-clay,,,,TRUE,TRUE,FALSE,,solid,,,"overlay,overlay-hm,overlay-vm,overlay-shrunk"
 ,gen-dice--green,,,,TRUE,TRUE,FALSE,,solid,,,"overlay,overlay-hm,overlay-vm,overlay-shrunk"

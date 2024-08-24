@@ -2,16 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.overlay-shrunk {
-  transform: scale(0.75) translate(-66.67%, -66.67%) !important;
+:root {
+  --main-font: var(--mono-font);
 }
 
-.overlay-tiny {
-  transform: scale(0.5) translate(-100%, -100%) !important;
-}
-
-.overlay-enlarge {
-  transform: scale(1.5) translate(-33.33%, -33.33%) !important;
+.main-shrunk {
+  transform: scale(0.5);
 }
 
 .overlay-behind {
@@ -22,52 +18,104 @@
   width: 200%;
 }
 
+/* Base overlay position */
 .overlay {
   position: absolute;
-  transform: translate(-50%, -50%);
+  --translate-x: -50%;
+  --translate-y: -50%;
+  --overlay-scale: 0.5;
+  transform: translate(var(--translate-x), var(--translate-y))
+    scale(var(--overlay-scale));
 }
 
+/* Horizontal alignment classes */
 .overlay-hl {
-  left: 0%;
+  --translate-x: -50%;
 }
 
 .overlay-hm {
-  left: 50%;
+  --translate-x: 0%;
 }
 
 .overlay-hr {
-  left: 100%;
+  --translate-x: 50%;
 }
 
+/* Vertical alignment classes */
 .overlay-vt {
-  top: 0%;
+  --translate-y: -50%;
 }
 
 .overlay-vm {
-  top: 50%;
+  --translate-y: 0%;
 }
 
 .overlay-vb {
-  top: 100%;
+  --translate-y: 50%;
 }
 
-@media screen and (max-width: 1200px) {
-  #action-text {
-    transform: scale(0.15);
-    height: 100dvw;
-  }
+.overlay-tiny {
+  --overlay-scale: 0.35;
+}
+
+.overlay-shrunk {
+  --overlay-scale: 0.5;
+}
+
+.overlay-enlarge {
+  --overlay-scale: 1;
+}
+
+.overlay-enlarge-plus {
+  --overlay-scale: 1.5;
 }
 
 #action-text * {
   background: transparent;
 }
 
+.action,
+.subaction,
+.object {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .action img {
-  height: unset;
-  width: unset;
-  max-width: unset;
-  max-height: unset;
-  background: transparent;
+  max-width: 100%;
+  width: auto;
+}
+
+.action {
+  width: 100%;
+  flex-direction: row-reverse;
+  border-bottom: 2px solid var(--main-accent-color);
+}
+
+.subaction {
+  flex-direction: row-reverse;
+  flex: 1;
+  padding: min(4vh, 1rem) 2.5%;
+  height: 100%;
+  width: 100%;
+}
+
+.object,
+.connect {
+  flex-direction: column-reverse;
+  position: relative;
+  max-width: min(8vw, 4rem);
+  margin: 2.5%;
+}
+
+.main,
+.mod-1,
+.mod-2,
+.connect {
+  z-index: 1;
+  /* width: 100%;
+  text-align: center; */
 }
 
 .wrap {
@@ -79,52 +127,13 @@
 }
 
 .flex-100 {
+  text-align: center;
+  flex-basis: 100%;
   width: 100%;
-  text-align: -webkit-center;
+  max-width: unset;
 }
 
-#action-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: min(6vw, 2rem);
-}
-
-.action,
-.subaction,
-.object {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: min(15vw, 5rem);
-}
-
-.action {
-  width: 100%;
-  flex-direction: row-reverse;
-  flex: 1;
-  padding: min(30vw, 10rem);
-  border: 2px solid var(--accent-bg-color);
-  padding: 0 min(15vw, 5rem);
-}
-
-.subaction {
-  flex-direction: row-reverse;
-  flex: 1;
-  padding: 0 min(15vw, 5rem);
-  height: 100%;
-  width: 100%;
-}
-
-.object {
-  flex-direction: column-reverse;
-  position: relative;
-}
-
-.main,
-.mod-1,
-.mod-2,
-.connect {
-  z-index: 1;
+.flex-100 > * {
+  max-width: min(8vw, 4rem) !important;
+  margin: auto;
 }

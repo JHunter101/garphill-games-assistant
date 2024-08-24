@@ -5,8 +5,8 @@ function setup(): void {
   const gameActionData = myActionDatabase[gameName];
   const gameActionTables: { [key: string]: codedAction } = {};
 
-  for (const [key, value] of Object.entries(gameActionData)) {
-    gameActionTables[key] = weightedRandomTable(value);
+  for (const [actionPhase, weightedOptions] of Object.entries(gameActionData)) {
+    gameActionTables[actionPhase] = weightedRandomTable(weightedOptions);
   }
 
   localStorage.setItem('actionTables', JSON.stringify(gameActionTables));
@@ -21,4 +21,5 @@ function mainMenu(): void {
   unhide_elem('main-menu');
   hide_elem('btn-draw');
   hide_elem('game');
+  clearBox('action-text');
 }
